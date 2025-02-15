@@ -1,4 +1,12 @@
 import React, { useState, useEffect } from "react";
+import {
+  BiLeftArrow,
+  BiRightArrow,
+  BiSolidLeftArrow,
+  BiSolidLeftDownArrowCircle,
+  BiSolidRightArrow,
+} from "react-icons/bi";
+import { motion } from "motion/react";
 
 const Testimonials = () => {
   const testimonials = [
@@ -53,7 +61,12 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="text-white py-12">
+    <motion.div
+      initial={{ rotateY: -180 }} // Start from 0° rotation
+      whileInView={{ rotateY: 0 }} // Flip to 180° when in view
+      transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition
+      className="text-white py-12"
+    >
       <div className="md:max-w-5xl mx-auto text-center rounded-2xl bg-[#072b3e] px-6 py-2">
         <div className="relative">
           {/* Testimonial Text */}
@@ -70,22 +83,22 @@ const Testimonials = () => {
           <div className="absolute bg-blue-400 rounded-full w-8 h-8 items-center justify-center flex top-1/2 left-2  transform -translate-y-1/2">
             <button
               onClick={handlePrev}
-              className="p-2 md:p-3 scale-125 rounded-full hover:scale-150 focus:outline-none"
+              className="p-2 md:p-3 scale-125 rounded-full  focus:outline-none"
             >
-              &lt;
+              <BiSolidLeftArrow />
             </button>
           </div>
           <div className="absolute bg-blue-400 rounded-full w-8 h-8 items-center justify-center flex top-1/2 right-2 md:right-2 transform -translate-y-1/2">
             <button
               onClick={handleNext}
-              className="p-2 md:p-3 scale-125 rounded-full hover:scale-150 focus:outline-none"
+              className="p-2 md:p-3 scale-125 rounded-full  focus:outline-none"
             >
-              &gt;
+              <BiSolidRightArrow />
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
