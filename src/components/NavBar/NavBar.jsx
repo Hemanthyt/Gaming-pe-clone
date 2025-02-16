@@ -14,14 +14,14 @@ const NavBar = () => {
     const menuItems = [
         { label: 'Home', path: '/' },
         { label: 'Features', path: '/features' },
-        { label: 'Technical Connector', path: '/technical' },
+        { label: 'Technical Connector', path: '/technicalconnector' },
         { label: 'About us', path: '/about' },
     ];
 
     const othersSubItems = [
-        { label: 'API Integration', path: '' },
-        { label: 'Crypto Currency', path: '' },
-        { label: 'Our vision', path: '' },
+        { label: 'API Integration', path: '/apiintegration' },
+        { label: 'Crypto Currency', path: '/cryptocurrency' },
+        { label: 'Our vision', path: '/oruvision' },
     ];
 
     return (
