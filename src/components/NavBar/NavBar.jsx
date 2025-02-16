@@ -93,17 +93,23 @@ const NavBar = () => {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden">
+                    <div className="flex md:hidden">
                         <button
                             onClick={toggleMenu}
                             className="text-gray-300 hover:text-white p-2"
                             aria-label="Toggle menu"
                         >
                             {isMenuOpen ? (
-                                <X className="h-8 w-8" />
+                                ""
                             ) : (
                                 <Menu className="h-8 w-8" />
                             )}
+                        </button>
+                        <button
+                            onClick={() => navigate("/gamingpe/newsletter")}
+                            className="border-2 border-[#00A6FB] bg-[#051622] text-white px-5 py-2 rounded-full text-lg cursor-pointer hover:bg-[#00A6FB] transition-colors duration-200"
+                        >
+                            Get in touch
                         </button>
                     </div>
                 </div>
@@ -111,9 +117,20 @@ const NavBar = () => {
 
             {/* Mobile Navigation */}
             <div
-                className={`md:hidden transition-all duration-700 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    } overflow-hidden`}
+                className={`z-50 md:hidden transition-all duration-700 ease-in-out 
+              ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} 
+              fixed left-0 top-0 h-full w-64 bg-[#051622]`}
             >
+                <div className="flex justify-end">
+                    <button
+                        onClick={toggleMenu}
+                        className="text-gray-300 hover:text-white p-2"
+                        aria-label="Toggle menu"
+                    >
+                        {isMenuOpen && <X className="h-8 w-8" />}
+                    </button>
+                </div>
+
                 <div className="px-4 pt-4 pb-5 space-y-2 bg-[#051622] shadow-lg">
                     {menuItems.map((item) => (
                         <Link
@@ -151,12 +168,7 @@ const NavBar = () => {
                     </div>
 
 
-                    <button
-                        onClick={() => navigate("/gamingpe/newsletter")}
-                        className="w-full text-center bg-[#00A6FB] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#0081C9] transition-colors duration-200 mt-4"
-                    >
-                        Get in touch
-                    </button>
+
 
                 </div>
             </div>
