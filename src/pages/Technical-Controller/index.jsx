@@ -19,7 +19,7 @@ const TechnicalController = () => {
       </div>
 
       {/* Connector Technology Services */}
-      <div className="flex flex-col lg:flex-row items-center justify-center backdrop-blur-md bg-[#082436]/30 border border-[#4f94c4]/20 p-6 md:p-12 lg:p-24 space-y-10 md:space-y-0 md:space-x-10 rounded-xl animate-slide-in-left">
+      <div className="flex flex-col container mx-auto lg:flex-row items-center justify-center backdrop-blur-md bg-[#082436]/30 border border-[#4f94c4]/20 p-6 md:p-12 lg:p-24 space-y-10 md:space-y-0 md:space-x-10 rounded-xl animate-slide-in-left">
         {/* Left Section - Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-blue-400  to-sky-200 text-transparent bg-clip-text leading-tight">
