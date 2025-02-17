@@ -36,13 +36,13 @@ const TechnicalController = () => {
         {/* Right Section - Image */}
         <div className="relative flex justify-center w-full lg:w-1/2 animate-float">
           {/* Background Shape */}
-          <div className="absolute bottom-0  right-24 w-60 h-80 bg-gradient-to-b from-[#4f94c4] to-[#082436] rounded-[48px]"></div>
+          <div className="absolute bottom-0 right-10  md:right-24 w-60 h-80 bg-gradient-to-b from-[#4f94c4] to-[#082436] rounded-[48px]"></div>
 
           {/* Image */}
           <img
             src="https://gamingpe.io/assets/connector_img-BqgLmEVE.webp"
             alt="Person Holding Phone"
-            className="relative z-50 w-[100%] left-16 h-[400px] md:h-[450px] lg:h-auto lg:top-0 top-20 sm:left-32 md:left-44   object-cover"
+            className="relative z-10 w-[100%] left-10 h-[400px] lg:h-auto lg:top-0 top-20 sm:left-32 md:left-44   object-cover"
           />
 
           <svg
