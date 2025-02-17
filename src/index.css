@@ -12,6 +12,10 @@
   }
 }
 
+body {
+  background-color: #051622;
+}
+
 .animate-marquee {
   display: flex;
   animation: marquee 15s linear infinite;
