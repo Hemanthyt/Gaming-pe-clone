@@ -3,7 +3,7 @@ import Marquee from "../../components/Marquee/Marquee";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen text-white bg-gradient-to-b from-[#051622] via-[#082436] to-[#051622]">
+    <div className="min-h-screen text-white bg-gradient-to-b from-[#051622] via-[#082436] to-[#051f32]">
       {/* Heading with enhanced animation */}
       <div className="flex flex-col items-center py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-7xl uppercase font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-sky-200 bg-clip-text text-transparent animate-pulse">
