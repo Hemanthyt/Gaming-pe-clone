@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FaCreditCard } from "react-icons/fa";
 
-const TcCard = ({ title, description, icon: Icon, rating }) => {
+const TcCard = ({ title, description, rating }) => {
   return (
     <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg shadow-xl p-6 my-4 max-w-4xl mx-auto hover:scale-105 transition-transform duration-300 hover:border-green-400/50">
       <div className="flex md:flex-row flex-col items-center gap-6">
