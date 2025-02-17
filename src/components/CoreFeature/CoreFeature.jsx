@@ -52,7 +52,7 @@ function CoreFeature() {
                             transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                         >
                             <img
-                                src="src\\assets\\coreFeatures-D86QESEV.webp"
+                                src="/assets/coreFeatures-D86QESEV.webp"
                                 alt="Phone"
                                 className="relative z-10 lg:w-[450px] lg:h-[550px] md:w-[300px] md:h-[300px] drop-shadow-lg"
                             />

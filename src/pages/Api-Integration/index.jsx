@@ -1,4 +1,4 @@
-import { assets } from "../../assets/assets";
+import { assets } from "../../lib/assets";
 
 const ApiIntegration = () => {
   return (

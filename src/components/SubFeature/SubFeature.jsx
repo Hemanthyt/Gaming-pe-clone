@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const SubFeature = () => {
     const images = [
-        "src\\assets\\paymentmethods2-CH6A_cmo.svg",
-        "src\\assets\\download.svg",
-        "src\\assets\\paymentmethods3-BG-ta1Ms.svg",
-        "src\\assets\\paymentmethods4-DUdOYnni.svg",
-        "src\\assets\\paymentmethods5-DHDmbJFk.svg",
+        "/assets/paymentmethods2-CH6A_cmo.svg",
+        "/assets/download.svg",
+        "/assets/paymentmethods3-BG-ta1Ms.svg",
+        "/assets/paymentmethods4-DUdOYnni.svg",
+        "/assets/paymentmethods5-DHDmbJFk.svg",
     ];
 
     return (
@@ -17,7 +17,7 @@ const SubFeature = () => {
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 1.5 }}
-                    src="src\\assets\\aboutBanner-D1jHUpAf.png" 
+                    src="/assets/aboutBanner-D1jHUpAf.png" 
                     className="w-full h-full object-cover opacity-40"
                     alt="Banner"
                 />

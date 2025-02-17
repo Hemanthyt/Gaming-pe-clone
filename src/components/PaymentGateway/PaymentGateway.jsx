@@ -4,10 +4,10 @@ import { Lock, UserCheck, Smartphone } from 'lucide-react';
 
 const PaymentGateway = () => {
     const cards = [
-        "src\\assets\\in-visa-platinum-card-498x280.webp",
-        "src\\assets\\in-visa-platinum-card-498x280.webp",
-        "src\\assets\\in-visa-platinum-card-498x280.webp",
-        "src\\assets\\in-visa-platinum-card-498x280.webp",
+        "/assets/in-visa-platinum-card-498x280.webp",
+        "/assets/in-visa-platinum-card-498x280.webp",
+        "/assets/in-visa-platinum-card-498x280.webp",
+        "/assets/in-visa-platinum-card-498x280.webp",
     ];
 
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -36,7 +36,7 @@ const PaymentGateway = () => {
                         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
                     >
                         <img
-                            src="src/assets/processImg-CNmjTZZY.webp"
+                            src="/assets/processImg-CNmjTZZY.webp"
                             alt="Phone"
                             className="relative z-10 w-[280px] sm:w-[350px] lg:w-[450px] h-auto drop-shadow-2xl"
                         />

@@ -1,4 +1,4 @@
-import { assets } from "../../assets/assets";
+import { assets } from "../../lib/assets";
 import Marquee from "../../components/Marquee/Marquee";
 
 const AboutUs = () => {

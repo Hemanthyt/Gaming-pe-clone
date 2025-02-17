@@ -1,4 +1,5 @@
-import { assets } from "../../assets/assets";
+import { assets } from "../../lib/assets";
+
 
 const Marquee = () => {
     const logos = [

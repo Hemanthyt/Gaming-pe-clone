@@ -27,7 +27,7 @@ function JoinEvent() {
             {/* Logo Section */}
             <div className="mb-8">
                 <img
-                    src="src\\assets\\logo2-BByECSNC.svg"
+                    src="/assets/logo2-BByECSNC.svg"
                     alt="GamingPE Logo"
                     className="h-24 w-auto"
                 />

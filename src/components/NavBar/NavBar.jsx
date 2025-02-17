@@ -33,7 +33,7 @@ const NavBar = () => {
                     <div className="flex-shrink-0">
                         <Link to="/" className="block">
                             <img
-                                src="src/assets/logo-CI6Py0Md.svg"
+                                src="/assets/logo-CI6Py0Md.svg"
                                 alt="GamingPE Logo"
                                 className="h-8 w-auto sm:h-10 md:h-12 lg:h-14 object-contain transition-all duration-200"
                             />

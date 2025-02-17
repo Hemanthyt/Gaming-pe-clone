@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import TcCard from "./Components/TC-Card";
 import { TCCardData } from "../../data";
-import { assets } from "../../assets/assets";
+import { assets } from "../../lib/assets";
 
 const TechnicalController = () => {
   const logos = [assets.Tc1, assets.Tc2, assets.Tc3, assets.Tc4, assets.Tc5];
