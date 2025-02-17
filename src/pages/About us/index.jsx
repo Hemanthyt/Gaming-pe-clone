@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="min-h-screen text-white bg-gradient-to-b from-[#051622] via-[#082436] to-[#051622]">
       {/* Heading with enhanced animation */}
       <div className="flex flex-col items-center py-16 px-4 text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl uppercase font-bold bg-gradient-to-r from-[#4f94c4] via-[#7eb9e9] to-[#4f94c4] bg-clip-text text-transparent animate-pulse">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl uppercase font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-sky-200 bg-clip-text text-transparent animate-pulse">
           ABOUT US
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 font-semibold mt-4 animate-fade-in">
@@ -17,7 +17,7 @@ const AboutUs = () => {
       {/* Principles Section with glass effect */}
       <div className="flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 py-12 gap-12">
         <div className="w-full lg:w-1/2">
-          <h1 className="text-5xl font-bold uppercase bg-gradient-to-r from-[#4f94c4] to-[#82c1f5] text-transparent bg-clip-text leading-tight mb-8">
+          <h1 className="text-5xl font-bold uppercase bg-gradient-to-r from-blue-400 via-cyan-300 to-sky-200 text-transparent bg-clip-text leading-tight mb-8">
             Our Principles
           </h1>
           
@@ -39,7 +39,7 @@ const AboutUs = () => {
               key={index}
               className="mb-6 p-6 backdrop-blur-md bg-[#082436]/30 rounded-xl border border-[#4f94c4]/20 hover:bg-[#082436]/50 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-[#4f94c4] to-[#82c1f5] text-transparent bg-clip-text">
+              <h2 className="text-2xl font-bold bg-gradient-to-r from-sky-200 to-sky-400 text-transparent bg-clip-text">
                 {principle.title}
               </h2>
               <p className="text-gray-300 mt-2">{principle.description}</p>
@@ -73,7 +73,7 @@ const AboutUs = () => {
               key={index}
               className="p-6 backdrop-blur-md bg-[#082436]/30 rounded-xl border border-[#4f94c4]/20 hover:bg-[#082436]/50 transition-all duration-300 transform hover:-translate-y-1 text-center"
             >
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-[#4f94c4] to-[#82c1f5] bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-[#83cafd] to-[#60abe8] bg-clip-text text-transparent">
                 {stat.value}
               </h3>
               <p className="text-gray-300 mt-2">{stat.label}</p>
@@ -85,7 +85,7 @@ const AboutUs = () => {
       {/* Global Presence Section */}
       <div className="px-6 lg:px-40 py-16 flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/2">
-          <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-[#4f94c4] to-[#82c1f5] text-transparent bg-clip-text mb-6">
+          <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-sky-200 text-transparent bg-clip-text mb-6">
             GLOBAL PRESENCE
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed backdrop-blur-md bg-[#082436]/30 p-6 rounded-xl border border-[#4f94c4]/20">
