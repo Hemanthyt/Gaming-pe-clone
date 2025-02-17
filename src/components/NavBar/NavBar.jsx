@@ -41,7 +41,7 @@ const NavBar = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
+                    <div className="hidden lg:flex md:items-center md:space-x-4 lg:space-x-6">
                         <div className="flex items-center space-x-4 lg:space-x-8">
                             {menuItems.map((item) => (
                                 <Link
@@ -86,7 +86,7 @@ const NavBar = () => {
                     </div>
 
                     {/* Mobile menu button and CTA */}
-                    <div className="flex items-center space-x-4 md:hidden">
+                    <div className="flex items-center space-x-4 lg:hidden">
                         <button
                             onClick={() => navigate("/newsletter")}
                             className="border-2 border-[#00A6FB] bg-[#051622] text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-[#00A6FB] transition-all duration-200"
