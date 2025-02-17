@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from "react";
-import {
-  BiLeftArrow,
-  BiRightArrow,
-  BiSolidLeftArrow,
-  BiSolidLeftDownArrowCircle,
-  BiSolidRightArrow,
-} from "react-icons/bi";
-import { motion } from "motion/react";
+import { useState, useEffect } from "react";
+import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Testimonials = () => {
   const testimonials = [
@@ -61,44 +55,88 @@ const Testimonials = () => {
   };
 
   return (
-    <motion.div
-      initial={{ rotateY: -180 }} // Start from 0° rotation
-      whileInView={{ rotateY: 0 }} // Flip to 180° when in view
-      transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition
-      className="text-white py-12"
-    >
-      <div className="md:max-w-5xl mx-auto text-center rounded-2xl bg-[#072b3e] px-6 py-2">
-        <div className="relative">
-          {/* Testimonial Text */}
-          <div className="text-gray-100 px-4 md:px-10">
-            <p className="text-sm md:text-lg lg:text-2xl font-bold  bg-gradient-to-r from-[#e6f1ae] to-[#cedfe4] text-transparent bg-clip-text italic max-w-3xl mx-auto mb-6 leading-relaxed">
-              {testimonials[activeIndex].title}
-            </p>
-            <h3 className="text-base  md:text-md lg:text-lg font-semibold text-gray-300">
-              {testimonials[activeIndex].description}
-            </h3>
-          </div>
+    <div className="relative min-h-[400px] py-16 px-4 overflow-hidden">
+      {/* Decorative Background */}
+     
 
-          {/* Navigation Buttons */}
-          <div className="absolute bg-blue-400 rounded-full w-8 h-8 items-center justify-center flex top-1/2 left-2  transform -translate-y-1/2">
-            <button
-              onClick={handlePrev}
-              className="p-2 md:p-3 scale-125 rounded-full  focus:outline-none"
-            >
-              <BiSolidLeftArrow />
-            </button>
-          </div>
-          <div className="absolute bg-blue-400 rounded-full w-8 h-8 items-center justify-center flex top-1/2 right-2 md:right-2 transform -translate-y-1/2">
-            <button
-              onClick={handleNext}
-              className="p-2 md:p-3 scale-125 rounded-full  focus:outline-none"
-            >
-              <BiSolidRightArrow />
-            </button>
-          </div>
-        </div>
-      </div>
-    </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="relative max-w-6xl mx-auto"
+      >
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeIndex}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            className="backdrop-blur-xl bg-white/10 rounded-2xl p-8 shadow-2xl"
+          >
+            <div className="relative z-10">
+              {/* Quote Icon */}
+              <div className="absolute -top-4 -left-2 text-6xl text-blue-400 opacity-30">
+                &quot;
+              </div>
+
+              {/* Testimonial Content */}
+              <div className="text-center space-y-6">
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-sky-400 text-transparent bg-clip-text"
+                >
+                  {testimonials[activeIndex].title}
+                </motion.h2>
+                
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="text-gray-200 text-lg leading-relaxed max-w-3xl mx-auto"
+                >
+                  {testimonials[activeIndex].description}
+                </motion.p>
+              </div>
+
+              {/* Navigation Buttons */}
+              <div className="flex justify-between items-center mt-8">
+                <button
+                  onClick={handlePrev}
+                  className="group transform transition-all hover:scale-110"
+                >
+                  <div className="bg-blue-500/20 hover:bg-blue-500 p-4 rounded-full transition-all">
+                    <BiSolidLeftArrow className="text-white text-xl" />
+                  </div>
+                </button>
+
+                {/* Indicators */}
+                <div className="flex gap-2">
+                  {testimonials.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveIndex(idx)}
+                      className={`h-2 rounded-full transition-all ${
+                        idx === activeIndex ? "w-8 bg-blue-400" : "w-2 bg-gray-400"
+                      }`}
+                    />
+                  ))}
+                </div>
+
+                <button
+                  onClick={handleNext}
+                  className="group transform transition-all hover:scale-110"
+                >
+                  <div className="bg-blue-500/20 hover:bg-blue-500 p-4 rounded-full transition-all">
+                    <BiSolidRightArrow className="text-white text-xl" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      </motion.div>
+    </div>
   );
 };
 

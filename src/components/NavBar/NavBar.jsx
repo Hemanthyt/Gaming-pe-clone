@@ -15,14 +15,14 @@ const NavBar = () => {
     const menuItems = [
         { label: 'Home', path: '/' },
         { label: 'Features', path: '/features' },
-        { label: 'Technical Connector', path: '/technicalconnector' },
+        { label: 'Technical Connector', path: '/technical-connector' },
         { label: 'About us', path: '/about' },
     ];
 
     const othersSubItems = [
-        { label: 'API Integration', path: '/apiintegration' },
+        { label: 'API Integration', path: '/api-integration' },
         { label: 'Crypto Currency', path: '/cryptocurrency' },
-        { label: 'Our vision', path: '/oruvision' },
+        { label: 'Our vision', path: '/our-vision' },
     ];
 
     return (
@@ -62,13 +62,13 @@ const NavBar = () => {
                                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-xl bg-[#051622] ring-1 ring-black ring-opacity-5 
                                     transform opacity-0 invisible scale-95 
                                     group-hover:opacity-100 group-hover:visible group-hover:scale-100 
-                                    transition-all duration-200 ease-out origin-top-left z-50">
+                                    transition-all duration-200 ease-out origin-top-left z-50 p-2">
                                     <div className="py-2">
                                         {othersSubItems.map((item) => (
                                             <Link
                                                 key={item.label}
                                                 to={item.path}
-                                                className="block px-4 py-2 text-sm lg:text-base text-white hover:bg-[#00A6FB] hover:text-white transition-colors duration-150"
+                                                className="block px-4 py-2 text-sm rounded-md lg:text-base text-white hover:bg-[#00A6FB] hover:text-white transition-colors duration-150"
                                             >
                                                 {item.label}
                                             </Link>
