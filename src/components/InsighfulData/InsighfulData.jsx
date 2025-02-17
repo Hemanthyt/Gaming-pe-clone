@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
 
 function InsighfulData() {
@@ -10,50 +11,54 @@ function InsighfulData() {
         }
     }, []);
     return (
-        <div className="min-h-screen bg-[#051622] mt-10 px-30 text-white p-8">
-            {/* Hero Section */}
+        <div className=" bg-[#051622] mt-10 px-4 sm:px-6 lg:px-30 text-white p-4 sm:p-8">
             <div className="max-w-7xl mx-auto">
-                <div className="grid md:grid-cols-2 gap-25 items-center">
+                <div className="grid md:grid-cols-2 gap-8 lg:gap-25 items-center">
                     {/* Left Column */}
-                    <div className="space-y-6">
-                        <h1 className="text-5xl font-bold">
-                            <span className="text-[#a8e6cf]">INSIGHTFUL</span> DATA
+                    <div className="space-y-4 sm:space-y-6 pb-8 md:pb-0">
+                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                            <span className="text-[#00A6FB]">INSIGHTFUL</span> DATA
                             <br />
-                            <span className="text-[#a8e6cf]">RICH</span> ANALYTICS
+                            <span className="text-[#00A6FB]">RICH</span> ANALYTICS
                         </h1>
 
-                        <p className="text-gray-300 text-lg leading-relaxed">
+                        <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                             Leverage real-time insights to understand payment trends, optimize
                             strategies, and drive growth in emerging markets with GamingPes
                             data-driven platform.
                         </p>
-                        <div className="grid   grid-cols-2 gap-8">
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
                             <FeatureCard
-                                width="250px"
+                                width="100%"
                                 title="Real-Time Data Access"
                                 description="Instantly access detailed, data-rich reports to make informed decisions and adapt to dynamic market trends."
                             />
 
                             <FeatureCard
-                                width="280px"
+                                width="100%"
                                 title="Enhanced Business Growth"
                                 description="Utilize comprehensive insights to plan effective marketing strategies, manage budgets efficiently, and expand seamlessly into new regions."
                             />
-
-
                         </div>
-
-                        <button className="border-3 border-[#00A6FB] bg-[#051622] text-white px-10 py-3 rounded-full text-[16px] cursor-pointer hover:bg-[#00A6FB] transition-colors duration-200">
+                        <button
+                            className="w-full sm:w-auto px-8 sm:px-12 py-4 
+                        bg-gradient-to-r from-[#00A6FB] to-[#0077B6] 
+                        text-white text-[14px] sm:text-[16px] font-semibold 
+                        rounded-full shadow-lg hover:shadow-xl
+                        transform hover:scale-105 transition-all duration-300 
+                        border border-[#00A6FB]/30 hover:border-[#00A6FB]"
+                        >
                             Learn More
                         </button>
                     </div>
 
-
-                    <div className="relative lg:p-20 w-full h-full flex items-center justify-center overflow-hidden rounded-xl">
-                        {/* Background Container (Behind Video) */}
+                    {/* Right Column */}
+                    <div className="relative p-4 sm:p-8 lg:p-20 w-full h-full flex items-center justify-center overflow-hidden rounded-xl">
+                        {/* Background Container */}
                         <div className="absolute inset-0 flex items-center justify-center">
                             {/* Background Gradient */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#a8e6cf] to-[#88d4bd] opacity-20 blur-3xl -z-10" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#00A6FB] to-[#00A6FB] opacity-20 blur-3xl -z-10" />
 
                             {/* Circular Gradient Shape */}
                             <div className="absolute top-[11%] left-[22%] lg:w-70 lg:h-138 bg-gradient-to-b from-blue-500 to-orange-300 rounded-xl opacity-20"></div>
@@ -86,11 +91,11 @@ function InsighfulData() {
 
                         </div>
 
-                        {/* Video Container (Above Background) */}
-                        <div className="relative border-1 border-sky-200/50 rounded-2xl h-[550px] bg-black/50">
+                        {/* Video Container */}
+                        <div className="relative border-1 border-sky-200/50 rounded-2xl h-[300px] sm:h-[400px] lg:h-[550px] bg-black/50">
                             <video
                                 ref={videoRef}
-                                className="p-5 w-full h-full object-cover rounded-xl"
+                                className="p-2 sm:p-5 w-full h-full object-cover rounded-xl"
                                 muted
                                 playsInline
                                 autoPlay
@@ -101,25 +106,24 @@ function InsighfulData() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );
 }
 
-function FeatureCard({ width, title, description }) {
+function FeatureCard({ title, description }) {
     return (
-        <div
-            className={`bg-[#081e2e] p-6 rounded-xl border border-[#a8e6cf] transition-colors duration-300`}
-            style={{ width: width }}
-        >    <div>
-                <h3 className="text-lg font-bold mb-2">{title}</h3>
-                <p className="text-white">{description}</p>
+        <div className="bg-[#081e2e] p-4 sm:p-6 rounded-xl border border-[#00A6FB] transition-colors duration-300 h-full">
+            <div>
+                <h3 className="text-base sm:text-lg font-bold mb-2">{title}</h3>
+                <p className="text-white text-sm sm:text-base">{description}</p>
             </div>
-
         </div>
     );
 }
+FeatureCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+};
 
 export default InsighfulData;

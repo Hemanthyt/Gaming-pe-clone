@@ -13,15 +13,15 @@ const FraudProtection = () => {
     ];
 
     return (
-        <div className="lg:px-30 md:p-10 sm:p-5">
-            <div className="text-center mb-16 lg:px-50 md:p-20 sm:p:20">
-                <h2 className="text-5xl font-bold text-white mb-4">FRAUD PROTECTION</h2>
-                <p className="lg:text-lg text-gray-300 sm:text-sm ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-gray-100 mb-4">FRAUD PROTECTION</h2>
+                <p className="text-gray-300 max-w-2xl mx-auto">
                     Keep transactions secure with advanced fraud detection. Our solutions are designed to provide unparalleled security for your business.
                 </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
                 {fraudProtectionCards.map((card) => {
                     const Icon = card.icon;
                     const isExpanded = expandedCard === card.id;
@@ -29,50 +29,52 @@ const FraudProtection = () => {
                     return (
                         <div
                             key={card.id}
-                            data-id={card.id}
-                            className={`group fraud-card mb-15 bg-[#00A6FB]/10 backdrop-blur-lg p-6 rounded-2xl border border-green-400/50 relative transition-all duration-500 ${isExpanded ? 'h-auto' : 'h-[150px]'
-                                }`}
+                            className={`bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg transition-all duration-300 hover:border-sky-500/40 shadow-lg hover:shadow-sky-500/10 ${
+                                isExpanded ? 'p-6' : 'p-6'
+                            }`}
                         >
-                            {/* Icon Wrapper - Move Up */}
-                            <div
-                                className={`absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00A6FB]/10 z-10 border-2 border-green-500 p-6 rounded-full transition-all duration-500 ${isExpanded ? 'top-[-70px]' : 'top-[-30px] group-hover:top-[-20px]'} `}
-                            >
-                                <Icon className="w-12 h-12 text-green-500" />
+                            <div className="flex items-start space-x-4">
+                                <div className="p-3 bg-sky-500/10 rounded-lg">
+                                    <Icon className="w-6 h-6 text-sky-400" />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-xl font-semibold text-sky-400 mb-2">
+                                        {card.title}
+                                    </h3>
+                                    <p className="text-gray-300 text-sm mb-4">
+                                        {card.description}
+                                    </p>
+                                    <button
+                                        onClick={() => setExpandedCard(isExpanded ? null : card.id)}
+                                        className="flex items-center text-sm text-gray-300 hover:text-sky-400 transition-all duration-300"
+                                    >
+                                        {isExpanded ? 'Show less' : 'Learn more'}
+                                        {isExpanded ? (
+                                            <ChevronUp className="w-4 h-4 ml-1 transition-transform duration-300" />
+                                        ) : (
+                                            <ChevronDown className="w-4 h-4 ml-1 transition-transform duration-300" />
+                                        )}
+                                    </button>
+                                </div>
                             </div>
-
-                            {/* Card Content */}
-                            <div className="flex flex-col items-center text-center pt-7">
-                                <h3 className="text-xl font-bold text-green-500 mb-2">{card.title}</h3>
-
-                                <motion.button
-                                    onClick={() => setExpandedCard(isExpanded ? null : card.id)}
-                                    className="text-green-500 flex items-center gap-1 transition-colors"
-                                    animate={!isExpanded ? { y: [0, -5, 0] } : { y: 0 }} // Bounce effect only on "Read More"
-                                    transition={{
-                                        repeat: Infinity,
-                                        repeatType: "loop",
-                                        duration: 1.2,
-                                        ease: "easeInOut",
-                                    }}
+                            
+                            {isExpanded && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, height: "auto" }}
+                                    exit={{ opacity: 0, height: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="mt-4 pt-4 border-t border-[#1E293B] text-gray-400 text-sm"
                                 >
-                                    {isExpanded ? 'Close' : 'Read More'}
-                                    {isExpanded ? (
-                                        <ChevronUp className="w-5 h-5 transform transition-transform duration-150" />
-                                    ) : (
-                                        <ChevronDown className="w-5 h-5 transform transition-transform duration-150" />
-                                    )}
-                                </motion.button>
-
-
-                                {isExpanded && <div className="mt-4 text-gray-300">{card.content}</div>}
-                            </div>
+                                    {card.content}
+                                </motion.div>
+                            )}
                         </div>
                     );
                 })}
             </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default FraudProtection
+export default FraudProtection;
