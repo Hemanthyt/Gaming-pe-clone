@@ -14,17 +14,17 @@ const App = () => {
   return (
     <>
       {location.pathname !== "/newsletter" && <NavBar />}
-      <div className="mt-20">
+      <div className={location.pathname !== "/newsletter" ? "mt-20":"mt-0"}>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/newsletter" element={<JoinEvent />} />
+          <Route path="/newsletter"  />
           <Route path="/features/" element={<Features></Features>} />
-          <Route path="/technicalconnector" element={<TechnicalController></TechnicalController>} />
+          <Route path="/technical-connector" element={<TechnicalController></TechnicalController>} />
           <Route path="/about" element={<AboutUs></AboutUs>} />
-          <Route path="/apiintegration" element={<ApiIntegration></ApiIntegration>} />
+          <Route path="/api-integration" element={<ApiIntegration></ApiIntegration>} />
           <Route path="/cryptocurrency" element={<CryptoCurrency></CryptoCurrency>} />
-          <Route path="/oruvision" element={<Vision></Vision>}></Route>
+          <Route path="/our-vision" element={<Vision></Vision>}></Route>
         </Routes>
       </div>
 

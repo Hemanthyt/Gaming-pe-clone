@@ -12,7 +12,7 @@ const Marquee = () => {
     return (
         <div >
             <div className="w-full   overflow-hidden relative">
-                <div className="w-full h-[1px] bg-green-400/50 mb-2"></div>
+                <div className="w-full h-[1px] bg-blue-400/50 mb-2"></div>
                 <div
                     className="flex gap-x-32 max-w-md animate-marquee"
 
@@ -26,7 +26,7 @@ const Marquee = () => {
                         />
                     ))}
                 </div>
-                <div className="w-full h-[1px] bg-green-400/50 mb-2"></div>
+                <div className="w-full h-[1px] bg-blue-400/50 mb-2"></div>
             </div>
         </div>
     )
