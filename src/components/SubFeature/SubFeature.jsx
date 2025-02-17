@@ -10,7 +10,7 @@ const SubFeature = () => {
     ];
 
     return (
-        <section className="relative bg-gradient-to-b from-[#051622] via-[#081c2d] to-[#0C2237] text-white">
+        <section className="relative bg-gradient-to-b pb-4 from-[#051622] via-[#081c2d] to-[#0C2237] text-white">
             {/* Hero Banner */}
             <div className="relative h-[500px] overflow-hidden">
                 <motion.img 

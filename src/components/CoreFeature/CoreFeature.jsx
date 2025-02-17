@@ -4,11 +4,11 @@ function CoreFeature() {
 
 
     return (
-        <div className="min-h-screen bg-[#051622] text-white py-16 px-30">
+        <div className=" bg-gradient-to-br p-8  from-[#051622]/95 to-[#0C2237]/90 text-white   px-30">
             {/* Title Section */}
             <div className="text-center mb-16">
                 <h1 className="text-6xl font-bold mb-6">
-                    <span className="text-[#a8e6cf]">CORE</span> FEATURES
+                    <span className="text-[#00A6FB]">CORE</span> FEATURES
                 </h1>
                 <p className="text-gray-300 max-w-3xl mx-auto text-lg">
                     Experience hassle-free gaming with transparent pricing, swift delivery, and secure
@@ -23,7 +23,7 @@ function CoreFeature() {
                     <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Zero Hidden Cost</h3>
                         <p className="text-white">
-                            Transparent pricing with no unexpected fees, ensuring you know exactly what you're
+                            Transparent pricing with no unexpected fees, ensuring you know exactly what you&apos;re
                             paying for.
                         </p>
                     </div>
@@ -72,7 +72,7 @@ function CoreFeature() {
                     <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Money-Back Guarantee</h3>
                         <p className="text-white">
-                            Full refund policy if you're not satisfied with your purchase, providing peace of mind.
+                            Full refund policy if you&apos;re not satisfied with your purchase, providing peace of mind.
                         </p>
                     </div>
                     <div className="hover:bg-[#112240] p-5 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">

@@ -34,7 +34,7 @@ function Home() {
 
 
     return (
-        <div className="bg-[#051622] relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden">
             {/* Background Video */}
             <video 
                 ref={videoRef} 
