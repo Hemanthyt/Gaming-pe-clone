@@ -15,9 +15,9 @@ const FraudProtection = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-100 mb-4">FRAUD PROTECTION</h2>
-                <p className="text-gray-300 max-w-2xl mx-auto">
-                    Keep transactions secure with advanced fraud detection. Our solutions are designed to provide unparalleled security for your business.
+                <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-wider">FRAUD PROTECTION</h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                    Keep your gaming transactions secure with advanced fraud detection. Our cybersecurity solutions protect your digital assets.
                 </p>
             </div>
 
@@ -29,24 +29,25 @@ const FraudProtection = () => {
                     return (
                         <div
                             key={card.id}
-                            className={`bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg transition-all duration-300 hover:border-sky-500/40 shadow-lg hover:shadow-sky-500/10 ${
+                            className={`bg-white backdrop-blur-sm border border-gray-200 rounded-lg transition-all duration-300 
+                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 ${
                                 isExpanded ? 'p-6' : 'p-6'
                             }`}
                         >
                             <div className="flex items-start space-x-4">
-                                <div className="p-3 bg-sky-500/10 rounded-lg">
-                                    <Icon className="w-6 h-6 text-sky-400" />
+                                <div className="p-3 bg-red-50 rounded-lg">
+                                    <Icon className="w-6 h-6 text-red-600" />
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="text-xl font-semibold text-sky-400 mb-2">
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
                                         {card.title}
                                     </h3>
-                                    <p className="text-gray-300 text-sm mb-4">
+                                    <p className="text-gray-600 text-sm mb-4">
                                         {card.description}
                                     </p>
                                     <button
                                         onClick={() => setExpandedCard(isExpanded ? null : card.id)}
-                                        className="flex items-center text-sm text-gray-300 hover:text-sky-400 transition-all duration-300"
+                                        className="flex items-center text-sm text-gray-600 hover:text-red-600 transition-all duration-300"
                                     >
                                         {isExpanded ? 'Show less' : 'Learn more'}
                                         {isExpanded ? (
@@ -64,7 +65,7 @@ const FraudProtection = () => {
                                     animate={{ opacity: 1, height: "auto" }}
                                     exit={{ opacity: 0, height: 0 }}
                                     transition={{ duration: 0.3 }}
-                                    className="mt-4 pt-4 border-t border-[#1E293B] text-gray-400 text-sm"
+                                    className="mt-4 pt-4 border-t border-gray-200 text-gray-600 text-sm"
                                 >
                                     {card.content}
                                 </motion.div>

@@ -36,16 +36,19 @@ function Home() {
     return (
         <div className="relative w-full overflow-hidden">
             {/* Background Video */}
-            <video 
-                ref={videoRef} 
-                className="absolute inset-0  w-full h-screen object-cover opacity-40" 
-                muted 
-                playsInline 
-                autoPlay 
-                loop
-            >
-                <source src="/videos/homeMap-DIlrE9fC.mp4" type="video/mp4" />
-            </video>
+
+            <div className="relative h-screen">
+        <div className="absolute inset-0 bg-black/60 z-[1]"></div>
+        <video 
+            ref={videoRef} 
+            className="absolute inset-0 w-full h-full object-cover opacity-70" 
+            muted 
+            playsInline 
+            autoPlay 
+            loop
+        >
+            <source src="/videos/homeMap-DIlrE9fC.mp4" type="video/mp4" />
+        </video>
 
             {/* Hero Section */}
             <div className="relative z-10 min-h-screen">
@@ -54,7 +57,7 @@ function Home() {
                         <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
                             Global<br />Payment Gateway<br />for Developing Markets
                         </h1>
-                        <p className="text-2xl font-semibold text-[#00A6FB]">
+                        <p className="text-2xl font-semibold text-[#FF0000]">
                             Unlocking New Horizons For International<br />Growth
                         </p>
                     </div>
@@ -62,35 +65,38 @@ function Home() {
                     {/* Stats and About Cards */}
                     <div className="grid md:grid-cols-2 gap-8 mt-20">
                         {/* About Card */}
-                        <div className="bg-white/5 hover:bg-[#051622]/80 backdrop-blur-lg p-8 md:p-10 rounded-2xl border border-white/20 transition-all duration-300">
-                            <h2 className="text-4xl font-bold text-white mb-6">About</h2>
-                            <p className="text-gray-200 text-lg leading-relaxed mb-8">
+                        <div className="bg-white/90 backdrop-blur-lg p-8 md:p-10 rounded-2xl border border-red-200 transition-all duration-300 hover:shadow-lg">
+                            <h2 className="text-4xl font-bold text-gray-800 mb-6">About</h2>
+                            <p className="text-gray-600 text-lg leading-relaxed mb-8">
                                 Gamingpe, founded in 2014, specializes in state-of-the-art payment processing and gateway technology. With expertise in payment solutions, risk management, and AI-driven innovations, we empower merchants to streamline operations and safeguard revenue. Our mission is to revolutionize payment experiences and enable global reach for businesses.
                             </p>
-                            <button className="border-2 border-[#00A6FB] bg-transparent text-white px-10 py-3 rounded-full text-lg hover:bg-[#00A6FB] transition-all duration-300">
+                            <button className="border-2 border-[#FF0000] bg-transparent text-[#FF0000] px-10 py-3 rounded-full text-lg hover:bg-[#FF0000] hover:text-white transition-all duration-300">
                                 Learn More
                             </button>
                         </div>
 
                         {/* Stats Card */}
-                        <div className="bg-white/5 hover:bg-[#051622]/80 backdrop-blur-lg p-8 md:p-10 rounded-2xl border border-white/20 transition-all duration-300">
+                        <div className="bg-white/90 backdrop-blur-lg p-8 md:p-10 rounded-2xl border border-red-200 transition-all duration-300 hover:shadow-lg">
                             <div className="grid grid-cols-2 gap-8 mb-10">
                                 <div>
-                                    <div className="text-5xl font-bold text-[#00A6FB] mb-4">50M+</div>
-                                    <p className="text-gray-200 text-lg">Over 50 million transactions processed with the highest success rate.</p>
+                                    <div className="text-5xl font-bold text-[#FF0000] mb-4">50M+</div>
+                                    <p className="text-gray-600 text-lg">Over 50 million transactions processed with the highest success rate.</p>
                                 </div>
-                                <div className="border-l border-white/20 pl-8">
-                                    <div className="text-5xl font-bold text-[#00A6FB] mb-4">30+</div>
-                                    <p className="text-gray-200 text-lg">Available in over 30 languages to cater to a global audience.</p>
+                                <div className="border-l border-gray-200 pl-8">
+                                    <div className="text-5xl font-bold text-[#FF0000] mb-4">30+</div>
+                                    <p className="text-gray-600 text-lg">Available in over 30 languages to cater to a global audience.</p>
                                 </div>
                             </div>
-                            <div className="text-2xl text-[#00A6FB] mb-2">⭐⭐⭐⭐⭐</div>
-                            <p className="text-gray-200 text-lg">We are supported with over 30+ languages</p>
+                            <div className="text-2xl text-[#FF0000] mb-2">⭐⭐⭐⭐⭐</div>
+                            <p className="text-gray-600 text-lg">We are supported with over 30+ languages</p>
                         </div>
                     </div>
                 </div>
             </div>
 
+    </div>
+
+        
             {/* Feature Sections */}
             <FraudProtection />
             <Marquee />
@@ -105,3 +111,4 @@ function Home() {
 }
 
 export default Home;
+            

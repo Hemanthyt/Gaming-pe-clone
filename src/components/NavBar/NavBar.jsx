@@ -26,7 +26,7 @@ const NavBar = () => {
     ];
 
     return (
-        <nav className="bg-gradient-to-r from-[#0f151c] to-[#051622] w-full fixed top-0 z-50 font-poppins shadow-lg">
+        <nav className="bg-white w-full fixed top-0 z-50 font-poppins shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20 lg:h-24">
                     {/* Logo and Brand */}
@@ -47,7 +47,7 @@ const NavBar = () => {
                                 <Link
                                     key={item.label}
                                     to={item.path}
-                                    className="text-white hover:text-sky-400 text-sm transition-colors duration-200 md:text-base lg:text-lg"
+                                    className="text-gray-700 hover:text-primary transition-colors duration-200 md:text-base lg:text-lg"
                                 >
                                     {item.label}
                                 </Link>
@@ -55,11 +55,11 @@ const NavBar = () => {
                             
                             {/* Others Dropdown */}
                             <div className="relative group">
-                                <button className="flex items-center text-white hover:text-sky-400 transition-colors duration-200 text-base lg:text-lg">
+                                <button className="flex items-center text-gray-700 hover:text-primary transition-colors duration-200 text-base lg:text-lg">
                                     Others
                                     <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
                                 </button>
-                                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-xl bg-[#051622] ring-1 ring-black ring-opacity-5 
+                                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-xl bg-white ring-1 ring-black ring-opacity-5 
                                     transform opacity-0 invisible scale-95 
                                     group-hover:opacity-100 group-hover:visible group-hover:scale-100 
                                     transition-all duration-200 ease-out origin-top-left z-50 p-2">
@@ -78,7 +78,7 @@ const NavBar = () => {
                             </div>
                             
                             <Link to="/newsletter">
-                                <button className="border-2 border-[#00A6FB] bg-[#051622] text-white px-6 py-2 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-[#00A6FB] transition-all duration-200 transform hover:scale-105">
+                                <button className="border-2 border-primary bg-white text-primary px-6 py-2 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-primary hover:text-white transition-all duration-200 transform hover:scale-105">
                                     Get in touch
                                 </button>
                             </Link>
