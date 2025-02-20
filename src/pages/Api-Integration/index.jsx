@@ -5,11 +5,11 @@ const ApiIntegration = () => {
     <div className="px-6 md:px-12 lg:px-20 py-16">
       {/* Heading */}
       <div className="flex flex-col items-center text-center animate-fade-in">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold bg-gradient-to-r from-blue-400 via-cyan-200 to-sky-100  bg-clip-text text-transparent">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold text-[#d3153b]   ">
           Secure Payment <br /> Solutions
         </h1>
 
-        <p className="text-sm sm:text-lg text-gray-300 max-w-md sm:max-w-xl md:max-w-2xl my-8 md:my-12 font-semibold">
+        <p className="text-sm sm:text-lg text-gray-700 max-w-md sm:max-w-xl md:max-w-2xl my-8 md:my-12 font-semibold">
           Empowering partners with seamless Debit, e-wallets, and crypto
           transactions for gaming worldwide.
         </p>
@@ -40,33 +40,35 @@ const ApiIntegration = () => {
         {/* Right Section - Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left animate-slide-in-right">
           <div className="space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase bg-gradient-to-r from-blue-400 to-cyan-100   text-transparent bg-clip-text leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase bg-gradient-to-r text-black   text-transparent bg-clip-text leading-tight">
               Just One API Integration
             </h2>
-            <p className="text-gray-200 text-lg md:text-xl font-semibold leading-relaxed">
+            <p className="text-gray-700 text-lg md:text-xl font-semibold leading-relaxed">
               Streamline Your Payment Integration with an API
             </p>
           </div>
 
           <div className="space-y-6 mt-8">
-            <p className="text-gray-300 text-md sm:text-lg leading-relaxed">
-              In today&apos;s interconnected economy, businesses must often cater to
-              various local payment methods to meet diverse customer needs. Our
-              single API integration simplifies this process dramatically.
+            <p className="text-gray-700 text-md sm:text-lg leading-relaxed">
+              In today&apos;s interconnected economy, businesses must often
+              cater to various local payment methods to meet diverse customer
+              needs. Our single API integration simplifies this process
+              dramatically.
             </p>
-            <p className="text-gray-300 text-md sm:text-lg leading-relaxed">
-              Connect with multiple local payment providers across emerging markets
-              effortlessly. This cohesive approach eliminates the hassle of managing
-              several integrations while reducing technical overhead.
+            <p className="text-gray-700 text-md sm:text-lg leading-relaxed">
+              Connect with multiple local payment providers across emerging
+              markets effortlessly. This cohesive approach eliminates the hassle
+              of managing several integrations while reducing technical
+              overhead.
             </p>
-            <p className="text-gray-300 text-md sm:text-lg leading-relaxed">
-              Our easy-to-integrate REST API provides access to popular local payment
-              options, ensuring alignment with regional preferences and boosting
-              customer satisfaction.
+            <p className="text-gray-700 text-md sm:text-lg leading-relaxed">
+              Our easy-to-integrate REST API provides access to popular local
+              payment options, ensuring alignment with regional preferences and
+              boosting customer satisfaction.
             </p>
-            <p className="text-gray-300 text-md sm:text-lg leading-relaxed">
-              Scale your business globally with a solution that evolves with you,
-              adding new payment methods without extensive reengineering.
+            <p className="text-gray-700 text-md sm:text-lg leading-relaxed">
+              Scale your business globally with a solution that evolves with
+              you, adding new payment methods without extensive reengineering.
             </p>
           </div>
         </div>
