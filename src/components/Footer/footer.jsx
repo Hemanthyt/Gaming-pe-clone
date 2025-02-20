@@ -7,7 +7,7 @@ const Footer = () => {
                     alt="GamingPE Logo"
                     className="h-16 w-48 mb-6"
                 />
-                <p className="text-white/80 text-sm">
+                <p className="text-black/80 text-sm">
                     Copyright © 2025 GamingPE. All Rights Reserved.
                 </p>
             </div>
