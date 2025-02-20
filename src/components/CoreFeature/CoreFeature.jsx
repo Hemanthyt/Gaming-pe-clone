@@ -4,13 +4,13 @@ function CoreFeature() {
 
 
     return (
-        <div className=" bg-gradient-to-br p-8  from-[#051622]/95 to-[#0C2237]/90 text-white   px-30">
+        <div className=" bg-gradient-to-br p-8  bg-white text-primary  px-30">
             {/* Title Section */}
             <div className="text-center mb-16">
                 <h1 className="text-6xl font-bold mb-6">
-                    <span className="text-[#00A6FB]">CORE</span> FEATURES
+                    <span className="text-red-500">CORE</span> FEATURES
                 </h1>
-                <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+                <p className="text-primary max-w-3xl mx-auto text-lg">
                     Experience hassle-free gaming with transparent pricing, swift delivery, and secure
                     transactions, backed by 24/7 support and a money-back guarantee.
                 </p>
@@ -20,23 +20,23 @@ function CoreFeature() {
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-15 relative">
                 {/* Left Column Features */}
                 <div className="space-y-8">
-                    <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
+                    <div className="hover:bg-gray-400 p-4 rounded-xl bg-gray-400/80 border-1 border-red-500/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Zero Hidden Cost</h3>
-                        <p className="text-white">
+                        <p className="text-primary">
                             Transparent pricing with no unexpected fees, ensuring you know exactly what you&apos;re
                             paying for.
                         </p>
                     </div>
-                    <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
+                    <div className="hover:bg-gray-400 p-4 rounded-xl bg-gray-400/80 border-1 border-red-500/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">24/7 Customer Support</h3>
-                        <p className="text-white">
+                        <p className="text-primary">
                             Round-the-clock assistance to help resolve any issues or questions promptly and
                             efficiently.
                         </p>
                     </div>
-                    <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
+                    <div className="hover:bg-gray-400 p-4 rounded-xl bg-gray-400/80 border-1 border-red-500/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Fast Delivery</h3>
-                        <p className="text-white">
+                        <p className="text-primary">
                             Swift processing and delivery of orders, so you can start gaming with zero delay.
                         </p>
                     </div>
@@ -62,22 +62,22 @@ function CoreFeature() {
 
                 {/* Right Column Features */}
                 <div className="space-y-8">
-                    <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
+                    <div className="hover:bg-gray-400 p-4 rounded-xl bg-gray-400/80 border-1 border-red-500/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Quality Assurance</h3>
-                        <p className="text-white">
+                        <p className="text-primary">
                             Rigorous quality checks to ensure you receive the best products and service every
                             time.
                         </p>
                     </div>
-                    <div className="hover:bg-[#112240] p-4 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
+                    <div className="hover:bg-gray-400 p-4 rounded-xl bg-gray-400/80 border-1 border-red-500/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Money-Back Guarantee</h3>
-                        <p className="text-white">
+                        <p className="text-primary">
                             Full refund policy if you&apos;re not satisfied with your purchase, providing peace of mind.
                         </p>
                     </div>
-                    <div className="hover:bg-[#112240] p-5 rounded-xl bg-[#1e3050] border-1 border-sky-200/50 transition-colors">
+                    <div className="hover:bg-gray-400 p-4 rounded-xl bg-gray-400/80 border-1 border-red-500/50 transition-colors">
                         <h3 className="text-xl font-bold mb-3">Secure Payment</h3>
-                        <p className="text-white">
+                        <p className="text-primary">
                             Advanced encryption to protect your payment information and enable safe transactions.
                         </p>
                     </div>

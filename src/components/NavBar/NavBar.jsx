@@ -33,9 +33,9 @@ const NavBar = () => {
                     <div className="flex-shrink-0">
                         <Link to="/" className="block">
                             <img
-                                src="/assets/logo-CI6Py0Md.svg"
+                                src="/assets/logo.jpg"
                                 alt="GamingPE Logo"
-                                className="h-8 w-auto sm:h-10 md:h-12 lg:h-14 object-contain transition-all duration-200"
+                                className="h-8 w-auto sm:h-15 md:h-20 lg:h-24 object-contain transition-all duration-200"
                             />
                         </Link>
                     </div>
@@ -52,7 +52,7 @@ const NavBar = () => {
                                     {item.label}
                                 </Link>
                             ))}
-                            
+
                             {/* Others Dropdown */}
                             <div className="relative group">
                                 <button className="flex items-center text-gray-700 hover:text-primary transition-colors duration-200 text-base lg:text-lg">
@@ -68,7 +68,7 @@ const NavBar = () => {
                                             <Link
                                                 key={item.label}
                                                 to={item.path}
-                                                className="block px-4 py-2 text-sm rounded-md lg:text-base text-white hover:bg-[#00A6FB] hover:text-white transition-colors duration-150"
+                                                className="block px-4 py-2 text-sm rounded-md lg:text-base transition-colors duration-150"
                                             >
                                                 {item.label}
                                             </Link>
@@ -76,9 +76,9 @@ const NavBar = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <Link to="/newsletter">
-                                <button className="border-2 border-primary bg-white text-primary px-6 py-2 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-primary hover:text-white transition-all duration-200 transform hover:scale-105">
+                                <button className="border-2 border-[#051622]/50 bg-white text-primary px-6 py-2 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-primary hover:text-primary transition-all duration-200 transform hover:scale-105">
                                     Get in touch
                                 </button>
                             </Link>
@@ -106,7 +106,7 @@ const NavBar = () => {
 
             {/* Mobile Navigation */}
             <div className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={toggleMenu}>
-                <div 
+                <div
                     className={`fixed right-0 top-0 h-full w-64 bg-[#051622] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                     onClick={e => e.stopPropagation()}
                 >
@@ -119,7 +119,7 @@ const NavBar = () => {
                                 <X className="h-6 w-6" />
                             </button>
                         </div>
-                        
+
                         <div className="flex flex-col space-y-1 px-4">
                             {menuItems.map((item) => (
                                 <Link
@@ -131,7 +131,7 @@ const NavBar = () => {
                                     {item.label}
                                 </Link>
                             ))}
-                            
+
                             {/* Mobile Others Items */}
                             <div className="px-4 py-2">
                                 <p className="text-gray-300 font-medium mb-2">Others</p>
