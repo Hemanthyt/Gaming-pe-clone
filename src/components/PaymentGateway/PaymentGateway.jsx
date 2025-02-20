@@ -45,13 +45,13 @@ const PaymentGateway = () => {
                             src={cards[currentCardIndex]}
                             alt="Card"
                             className="absolute bottom-[15%] left-[60%] translate-x-[-50%] w-48 sm:w-56 lg:w-64 shadow-2xl z-20 rounded-xl"
-                            animate={{ 
+                            animate={{
                                 rotateY: [0, 180, 360],
                                 scale: [1, 1.05, 1]
                             }}
-                            transition={{ 
-                                repeat: Infinity, 
-                                duration: 3, 
+                            transition={{
+                                repeat: Infinity,
+                                duration: 3,
                                 ease: "easeInOut"
                             }}
                         />
@@ -65,7 +65,7 @@ const PaymentGateway = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl uppercase font-bold bg-gradient-to-r from-red-600 via-red-500 to-red-600 bg-clip-text text-transparent animate-pulse">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl uppercase font-bold bg-[#920323] bg-clip-text text-transparent animate-pulse">
                             SIMPLE PAYMENT <br /> GATEWAY PROCESS
                         </h2>
                         <p className="text-gray-600 mt-4 text-sm sm:text-base leading-relaxed">
@@ -86,7 +86,7 @@ const PaymentGateway = () => {
                                 transition={{ delay: index * 0.2 }}
                                 className="flex items-start gap-4 group"
                             >
-                                <div className="w-16 h-16 flex items-center justify-center rounded-xl shadow-lg bg-gradient-to-br from-red-500 via-red-600 to-red-500 group-hover:from-red-600 group-hover:to-red-500 transition-all duration-500">
+                                <div className="w-16 h-16 flex items-center justify-center rounded-xl shadow-lg bg-[#920323] group-hover:from-red-600 transition-all duration-500">
                                     <motion.div
                                         animate={{ y: [-5, 5, -5] }}
                                         transition={{ repeat: Infinity, duration: 3 + index, ease: "easeInOut" }}

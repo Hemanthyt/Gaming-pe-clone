@@ -17,9 +17,9 @@ function InsighfulData() {
                     {/* Left Column */}
                     <div className="space-y-4 sm:space-y-6 pb-8 md:pb-0">
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-                            <span className="text-red-500">INSIGHTFUL</span> DATA
+                            <span className="text-[#920323]">INSIGHTFUL</span> DATA
                             <br />
-                            <span className="text-red-500">RICH</span> ANALYTICS
+                            <span className="text-[#920323]">RICH</span> ANALYTICS
                         </h1>
 
                         <p className="text-primary text-base sm:text-lg leading-relaxed">
@@ -41,7 +41,7 @@ function InsighfulData() {
                                 description="Utilize comprehensive insights to plan effective marketing strategies, manage budgets efficiently, and expand seamlessly into new regions."
                             />
                         </div>
-                        <button className="border-2 border-[#FF0000] bg-transparent text-[#FF0000] px-10 py-3 rounded-full text-lg hover:bg-[#FF0000] hover:text-white transition-all duration-300">
+                        <button className="border-2 border-[#FF0000] bg-transparent text-[#920323] px-10 py-3 rounded-full text-lg hover:bg-[#920323] hover:text-white transition-all duration-300">
                             Learn More
                         </button>
                     </div>

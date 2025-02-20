@@ -8,7 +8,7 @@ const Features = () => {
             {/* Hero Section */}
             <section className="container mx-auto px-4 py-16">
                 <div className="text-center animate-fade-in">
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold font-poppins bg-gradient-to-r from-red-400 via-red-300 to-red-400 bg-clip-text text-transparent">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold font-poppins bg-[#920323] bg-clip-text text-transparent">
                         FEATURES
                     </h1>
                     <p className="text-primary text-base md:text-lg max-w-2xl mx-auto mt-6">

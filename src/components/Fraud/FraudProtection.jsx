@@ -30,13 +30,12 @@ const FraudProtection = () => {
                         <div
                             key={card.id}
                             className={`bg-white backdrop-blur-sm border border-gray-200 rounded-lg transition-all duration-300 
-                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 ${
-                                isExpanded ? 'p-6' : 'p-6'
-                            }`}
+                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 ${isExpanded ? 'p-6' : 'p-6'
+                                }`}
                         >
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 bg-red-50 rounded-lg">
-                                    <Icon className="w-6 h-6 text-red-600" />
+                                    <Icon className="w-6 h-6 text-[#920323]" />
                                 </div>
                                 <div className="flex-1">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -47,7 +46,7 @@ const FraudProtection = () => {
                                     </p>
                                     <button
                                         onClick={() => setExpandedCard(isExpanded ? null : card.id)}
-                                        className="flex items-center text-sm text-gray-600 hover:text-red-600 transition-all duration-300"
+                                        className="flex items-center text-sm text-gray-600 hover:text-[#920323] transition-all duration-300"
                                     >
                                         {isExpanded ? 'Show less' : 'Learn more'}
                                         {isExpanded ? (
@@ -58,7 +57,7 @@ const FraudProtection = () => {
                                     </button>
                                 </div>
                             </div>
-                            
+
                             {isExpanded && (
                                 <motion.div
                                     initial={{ opacity: 0, y: -10 }}

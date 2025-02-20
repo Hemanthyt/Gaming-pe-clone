@@ -41,7 +41,7 @@ const SubFeature = () => {
                                 transition={{ delay: 0.3 }}
                                 className="text-4xl md:text-5xl font-bold"
                             >
-                                <span className="bg-gradient-to-r from-red-500 via-red-400 to-red-300 bg-clip-text text-transparent">
+                                <span className="bg-[#920323] bg-clip-text text-transparent">
                                     One API
                                 </span>
                                 <br />
@@ -111,7 +111,7 @@ const SubFeature = () => {
                                         initial={{ scale: 0 }}
                                         animate={{ scale: 1 }}
                                         transition={{ delay: 0.8, type: "spring" }}
-                                        className="text-6xl font-bold bg-gradient-to-r from-red-400 to-red-300 bg-clip-text text-transparent"
+                                        className="text-6xl font-bold bg-[#920323] bg-clip-text text-transparent"
                                     >
                                         100+
                                     </motion.h3>

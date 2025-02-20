@@ -8,7 +8,7 @@ function CoreFeature() {
             {/* Title Section */}
             <div className="text-center mb-16">
                 <h1 className="text-6xl font-bold mb-6">
-                    <span className="text-red-500">CORE</span> FEATURES
+                    <span className="text-[#920323]">CORE</span> FEATURES
                 </h1>
                 <p className="text-primary max-w-3xl mx-auto text-lg">
                     Experience hassle-free gaming with transparent pricing, swift delivery, and secure
