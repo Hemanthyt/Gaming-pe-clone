@@ -9,7 +9,7 @@ const TechnicalController = () => {
     <div className="min-h-screen bg-gradient-to-b bg-white px-6">
       {/* Heading */}
       <div className="flex flex-col items-center py-10 text-center animate-fade-in">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl uppercase font-bold text-black ">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl uppercase font-bold text-[#920323] ">
           Technical Connector
         </h1>
         <p className="text-base md:text-lg text-gray-700 font-semibold mt-3">
@@ -19,13 +19,16 @@ const TechnicalController = () => {
       </div>
 
       {/* Connector Technology Services */}
-      <div className="flex flex-col container mx-auto lg:flex-row items-center justify-center backdrop-blur-md  bg-[#d3153b] order border-[#4f94c4]/20 p-6 md:p-12 lg:p-24 space-y-10 md:space-y-0 md:space-x-10 rounded-xl animate-slide-in-left">
+      <div
+        className="flex flex-col container mx-auto lg:flex-row items-center justify-center bg-white backdrop-blur-sm border border-gray-200  transition-all duration-300 
+                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 p-6 md:p-12 lg:p-24 space-y-10 md:space-y-0 md:space-x-10 rounded-xl animate-slide-in-left"
+      >
         {/* Left Section - Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r text-white text-transparent bg-clip-text leading-tight">
+          <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r text-[#920323] leading-tight">
             CONNECTOR <br /> TECHNOLOGY <br /> SERVICES
           </h1>
-          <p className="text-gray-300 text-base lg:text-lg mt-4 leading-relaxed">
+          <p className="text-gray-600 text-base lg:text-lg mt-4 leading-relaxed">
             Welcome to Connector Technology Services, your trusted partner in
             payment solutions. We provide seamless and secure transaction
             processing to enhance business operations. Experience reliable

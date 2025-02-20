@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="min-h-screen  bg-white">
       {/* Heading with enhanced animation */}
       <div className="flex flex-col items-center py-16 px-4 text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl uppercase font-bold bg-gradient-to-r text-black animate-pulse">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl uppercase font-bold bg-gradient-to-r text-[#920323] animate-pulse">
           ABOUT US
         </h1>
         <p className="text-lg sm:text-xl text-gray-700 font-semibold mt-4 animate-fade-in">
@@ -40,12 +40,13 @@ const AboutUs = () => {
           ].map((principle, index) => (
             <div
               key={index}
-              className="mb-6 p-6 backdrop-blur-md bg-[#d3153b] rounded-xl border border-[#4f94c4]/20 hover:bg-[#d3153b] transition-all duration-300 transform hover:-translate-y-1"
+              className="mb-6 p-6 backdrop-blur-md bg-white  border border-gray-200 rounded-lg 
+                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <h2 className="text-2xl font-bold bg-gradient-to-r text-white text-transparent bg-clip-text">
+              <h2 className="text-2xl font-bold bg-gradient-to-r text-[#920323] ">
                 {principle.title}
               </h2>
-              <p className="text-gray-300 mt-2">{principle.description}</p>
+              <p className="text-gray-600 mt-2">{principle.description}</p>
             </div>
           ))}
         </div>
@@ -74,12 +75,13 @@ const AboutUs = () => {
           ].map((stat, index) => (
             <div
               key={index}
-              className="p-6 backdrop-blur-md bg-[#d3153b] rounded-xl border border-[#4f94c4]/20 hover:bg-[#082436]/50 transition-all duration-300 transform hover:-translate-y-1 text-center"
+              className="p-6 bg-white backdrop-blur-sm border border-gray-200 rounded-lg transition-all duration-300 
+                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 transform hover:-translate-y-1 text-center"
             >
-              <h3 className="text-3xl font-bold bg-gradient-to-r text-white bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold bg-gradient-to-r text-[#920323] bg-clip-text text-transparent">
                 {stat.value}
               </h3>
-              <p className="text-gray-200 mt-2">{stat.label}</p>
+              <p className="text-gray-600 mt-2">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -88,10 +90,13 @@ const AboutUs = () => {
       {/* Global Presence Section */}
       <div className="px-6 lg:px-40 py-16 flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/2">
-          <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r text-black  mb-6">
+          <h2 className="text-3xl sm:text-5xl font-bold bg-gradient-to-r text-[#920323]  mb-6">
             GLOBAL PRESENCE
           </h2>
-          <p className="text-gray-200 text-lg leading-relaxed backdrop-blur-md bg-[#d3153b] p-6 rounded-xl border border-[#4f94c4]/20">
+          <p
+            className="text-gray-600 text-lg leading-relaxed p-6 bg-white backdrop-blur-sm border border-gray-200 rounded-lg transition-all duration-300 
+                            hover:border-red-500/70 shadow-lg hover:shadow-red-500/10"
+          >
             GamingPe connects gamers worldwide with seamless services and
             localized support, creating a unified gaming community across
             continents.

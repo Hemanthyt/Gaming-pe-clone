@@ -5,11 +5,11 @@ const ApiIntegration = () => {
     <div className="px-6 md:px-12 lg:px-20 py-16">
       {/* Heading */}
       <div className="flex flex-col items-center text-center animate-fade-in">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold text-[#d3153b]   ">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold text-[#920323]  ">
           Secure Payment <br /> Solutions
         </h1>
 
-        <p className="text-sm sm:text-lg text-gray-700 max-w-md sm:max-w-xl md:max-w-2xl my-8 md:my-12 font-semibold">
+        <p className="text-sm sm:text-lg text-gray-600 max-w-md sm:max-w-xl md:max-w-2xl my-8 md:my-12 font-semibold">
           Empowering partners with seamless Debit, e-wallets, and crypto
           transactions for gaming worldwide.
         </p>

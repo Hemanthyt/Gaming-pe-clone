@@ -57,7 +57,6 @@ const Testimonials = () => {
   return (
     <div className="relative min-h-[400px] py-16 px-4 overflow-hidden">
       {/* Decorative Background */}
-     
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -75,7 +74,7 @@ const Testimonials = () => {
           >
             <div className="relative z-10">
               {/* Quote Icon */}
-              <div className="absolute -top-4 -left-2 text-6xl text-blue-400 opacity-30">
+              <div className="absolute -top-4 -left-2 text-6xl text-[#920323] opacity-30">
                 &quot;
               </div>
 
@@ -84,16 +83,16 @@ const Testimonials = () => {
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-sky-400 text-transparent bg-clip-text"
+                  className="text-3xl font-bold text-[#920323]"
                 >
                   {testimonials[activeIndex].title}
                 </motion.h2>
-                
+
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
-                  className="text-gray-200 text-lg leading-relaxed max-w-3xl mx-auto"
+                  className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto"
                 >
                   {testimonials[activeIndex].description}
                 </motion.p>
@@ -105,7 +104,7 @@ const Testimonials = () => {
                   onClick={handlePrev}
                   className="group transform transition-all hover:scale-110"
                 >
-                  <div className="bg-blue-500/20 hover:bg-blue-500 p-4 rounded-full transition-all">
+                  <div className="bg-[#920323]/20 hover:bg-[#920323] p-4 rounded-full transition-all">
                     <BiSolidLeftArrow className="text-white text-xl" />
                   </div>
                 </button>
@@ -117,7 +116,9 @@ const Testimonials = () => {
                       key={idx}
                       onClick={() => setActiveIndex(idx)}
                       className={`h-2 rounded-full transition-all ${
-                        idx === activeIndex ? "w-8 bg-blue-400" : "w-2 bg-gray-400"
+                        idx === activeIndex
+                          ? "w-8 bg-[#920323]"
+                          : "w-2 bg-gray-400"
                       }`}
                     />
                   ))}
@@ -127,7 +128,7 @@ const Testimonials = () => {
                   onClick={handleNext}
                   className="group transform transition-all hover:scale-110"
                 >
-                  <div className="bg-blue-500/20 hover:bg-blue-500 p-4 rounded-full transition-all">
+                  <div className="bg-[#920323]/20 hover:bg-[#920323] p-4 rounded-full transition-all">
                     <BiSolidRightArrow className="text-white text-xl" />
                   </div>
                 </button>
