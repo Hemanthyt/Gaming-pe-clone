@@ -42,7 +42,7 @@ function InsighfulData() {
                                 description="Utilize comprehensive insights to plan effective marketing strategies, manage budgets efficiently, and expand seamlessly into new regions."
                             />
                         </div>
-                        <button className="border-2 border-[#FF0000] bg-transparent text-[#920323] px-10 py-3 rounded-full text-lg hover:bg-[#920323] hover:text-white transition-all duration-300">
+                        <button className="border-2 border-[#FF0000] bg-transparent text-[#920323] px-10 py-3 rounded-full text-lg hover:bg-[#e9345b] hover:text-white transition-all duration-300">
                             Learn More
                         </button>
                     </div>

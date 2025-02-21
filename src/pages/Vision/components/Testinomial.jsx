@@ -104,7 +104,7 @@ const Testimonials = () => {
                   onClick={handlePrev}
                   className="group transform transition-all hover:scale-110"
                 >
-                  <div className="bg-[#920323]/20 hover:bg-[#920323] p-4 rounded-full transition-all">
+                  <div className="bg-[#920323]/20 hover:bg-[#e9345b] p-4 rounded-full transition-all">
                     <BiSolidLeftArrow className="text-white text-xl" />
                   </div>
                 </button>
@@ -128,7 +128,7 @@ const Testimonials = () => {
                   onClick={handleNext}
                   className="group transform transition-all hover:scale-110"
                 >
-                  <div className="bg-[#920323]/20 hover:bg-[#920323] p-4 rounded-full transition-all">
+                  <div className="bg-[#920323]/20 hover:bg-[#e9345b] p-4 rounded-full transition-all">
                     <BiSolidRightArrow className="text-white text-xl" />
                   </div>
                 </button>

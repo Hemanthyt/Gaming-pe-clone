@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -24,6 +25,10 @@ const NavBar = () => {
         { label: 'Crypto Currency', path: '/cryptocurrency' },
         { label: 'Our vision', path: '/our-vision' },
     ];
+
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
 
     return (
         <nav className="bg-white w-full fixed top-0 z-50 font-poppins shadow-lg">
@@ -47,7 +52,10 @@ const NavBar = () => {
                                 <Link
                                     key={item.label}
                                     to={item.path}
-                                    className="text-gray-700 hover:text-primary transition-colors duration-200 md:text-base lg:text-lg"
+                                    className={`transition-colors duration-200 md:text-base lg:text-lg ${isActive(item.path)
+                                            ? 'text-[#920323] font-semibold'
+                                            : 'text-gray-700 hover:text-[#920323]'
+                                        }`}
                                 >
                                     {item.label}
                                 </Link>
@@ -55,7 +63,7 @@ const NavBar = () => {
 
                             {/* Others Dropdown */}
                             <div className="relative group">
-                                <button className="flex items-center text-gray-700 hover:text-primary transition-colors duration-200 text-base lg:text-lg">
+                                <button className="flex items-center text-gray-700 hover:text-[#920323] transition-colors duration-200 text-base lg:text-lg">
                                     Others
                                     <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
                                 </button>
@@ -78,8 +86,8 @@ const NavBar = () => {
                             </div>
 
                             <Link to="/newsletter">
-                                <button className="border-2 border-[#051622]/50 bg-white text-primary px-6 py-2 lg:px-8 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-primary hover:text-primary transition-all duration-200 transform hover:scale-105">
-                                    Get in touch
+                                <button className="border-[1px] border-[#e9345b] bg-transparent text-[#e9345b] px-4 py-2 rounded-full text-lg hover:bg-[#e9345b] hover:text-white transition-all duration-300">
+                                    Get in Touch
                                 </button>
                             </Link>
                         </div>
@@ -125,7 +133,10 @@ const NavBar = () => {
                                 <Link
                                     key={item.label}
                                     to={item.path}
-                                    className="text-gray-700 hover:text-gray-500 px-4 py-2 text-base font-medium transition-colors duration-200"
+                                    className={`px-4 py-2 text-base font-medium transition-colors duration-200 ${isActive(item.path)
+                                            ? 'text-[#920323] font-semibold'
+                                            : 'text-gray-700 hover:text-gray-500'
+                                        }`}
                                     onClick={toggleMenu}
                                 >
                                     {item.label}

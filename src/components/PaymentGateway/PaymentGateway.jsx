@@ -15,7 +15,7 @@ const PaymentGateway = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
-        }, 1000); // Change every 1 second
+        }, 3000); // Change every 3 seconds
 
         return () => clearInterval(interval);
     }, []);
@@ -38,21 +38,27 @@ const PaymentGateway = () => {
                         <img
                             src="/assets/processImg-CNmjTZZY.webp"
                             alt="Phone"
-                            className="relative z-10 w-[280px] sm:w-[350px] lg:w-[450px] h-auto drop-shadow-2xl"
+                            className="relative z-10 w-[280px] sm:w-[350px] lg:w-[450px] h-auto "
                         />
                         <motion.img
                             key={currentCardIndex}
                             src={cards[currentCardIndex]}
                             alt="Card"
-                            className="absolute bottom-[15%] left-[60%] translate-x-[-50%] w-48 sm:w-56 lg:w-64 shadow-2xl z-20 rounded-xl"
-                            animate={{
-                                rotateY: [0, 180, 360],
-                                scale: [1, 1.05, 1]
+                            className="absolute bottom-[15%] left-[60%] translate-x-[-50%] w-48 sm:w-56 lg:w-64  z-20 rounded-xl"
+                            initial={{ opacity: 0 }}
+                            animate={{ 
+                                opacity: 1,
+                                rotateY: [0, 360],
                             }}
                             transition={{
-                                repeat: Infinity,
                                 duration: 3,
-                                ease: "easeInOut"
+                                ease: "linear",
+                                repeat: Infinity,
+                                opacity: { duration: 0.5 }
+                            }}
+                            style={{
+                                perspective: 1000,
+                                transformStyle: "preserve-3d"
                             }}
                         />
                     </motion.div>
