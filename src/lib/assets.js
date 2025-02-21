@@ -11,17 +11,16 @@ export const assets = {
   Bitcoin: "/assets/Bitcoin.svg",
   Globe: "/assets/globe.mp4",
   HandMobile: "/assets/api-image.svg",
-  CryptoCoin: "/assets/cryptocoin.png",
   vision: "/assets/vision1.svg",
   map: "/assets/map.svg",
-  logo:"/assets/logo.jpg",
-  payment:'/assets/global-payments.jpg',
-  transfer:'/assets/transfer.jpg'
+  logo: "/assets/logo.jpg",
+  payment: "/assets/global-payments.jpg",
+  transfer: "/assets/transfer.jpg",
+  crypto: "/assets/crypto.jpg",
 };
 
 export const videos = {
   globe: "/videos/globe.mp4",
-  chat:'/videos/chat.mp4',
-  banner:"/videos/banner.mp4"
-}
- 
+  chat: "/videos/chat.mp4",
+  banner: "/videos/banner.mp4",
+};
