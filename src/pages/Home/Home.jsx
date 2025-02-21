@@ -37,12 +37,9 @@ function Home() {
     return (
         <div className="relative w-full overflow-hidden">
             {/* Background Video */}
-
-            <div className="relative h-screen">
-                <div className="absolute inset-0 bg-black/60 z-[1]"></div>
                 <video
                     ref={videoRef}
-                    className="absolute inset-0 w-full h-full object-cover opacity-70"
+                    className="absolute inset-0  w-full h-screen object-cover " 
                     muted
                     playsInline
                     autoPlay
@@ -52,19 +49,19 @@ function Home() {
                 </video>
 
                 {/* Hero Section */}
-                <div className="relative z-10 min-h-screen">
+                <div className="relative  min-h-screen">
                     <div className="container mx-auto px-4 md:px-10 pt-20 md:pt-32">
                         <div className="text-white max-w-3xl">
                             <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
                                 Global<br />Payment Gateway<br />for Developing Markets
                             </h1>
-                            <p className="text-2xl font-semibold text-red-700">
+                            <p className="text-2xl font-semibold text-red-300">
                                 Unlocking New Horizons For International<br />Growth
                             </p>
                         </div>
 
                         {/* Stats and About Cards */}
-                        <div className="grid md:grid-cols-2 gap-8 mt-20">
+                        <div className="grid md:grid-cols-2 gap-8 mt-20 ">
                             {/* About Card */}
                             <div className="bg-white/90 backdrop-blur-lg p-8 md:p-10 rounded-2xl border border-red-200 transition-all duration-300 hover:shadow-lg">
                                 <h2 className="text-4xl font-bold text-gray-800 mb-6">About</h2>
@@ -94,8 +91,6 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
-            </div>
 
 
             {/* Feature Sections */}

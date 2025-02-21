@@ -30,12 +30,12 @@ const NavBar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20 lg:h-24">
                     {/* Logo and Brand */}
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 ">
                         <Link to="/" className="block">
                             <img
                                 src="/assets/logo.jpg"
                                 alt="CricPay Logo"
-                                className="h-8 w-auto sm:h-15 md:h-20 lg:h-24 object-contain transition-all duration-200"
+                                className="w-auto  h-20 lg:h-24 object-contain transition-all duration-200"
                             />
                         </Link>
                     </div>
