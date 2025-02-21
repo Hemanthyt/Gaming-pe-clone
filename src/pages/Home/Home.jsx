@@ -39,7 +39,7 @@ function Home() {
             {/* Background Video */}
                 <video
                     ref={videoRef}
-                    className="absolute inset-0  w-full h-screen object-cover " 
+                    className="absolute inset-0  w-full h-screen bg-black/50 opacity-80 object-cover " 
                     muted
                     playsInline
                     autoPlay

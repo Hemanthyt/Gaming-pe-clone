@@ -50,7 +50,7 @@ const Vision = () => {
             <img
               src={assets.vision}
               alt="Person Holding Phone"
-              className="relative z-10 w-full max-w-xs md:max-w-md lg:max-w-lg object-cover rounded"
+              className="relative z-10 w-full  md:max-w-md lg:max-w-lg object-cover rounded"
             />
           </div>
         </div>
