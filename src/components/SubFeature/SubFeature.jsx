@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
+import { assets } from "../../lib/assets";
 
 const SubFeature = () => {
     const images = [
-        "/assets/paymentmethods2-CH6A_cmo.svg",
-        "/assets/download.svg",
-        "/assets/paymentmethods3-BG-ta1Ms.svg",
-        "/assets/paymentmethods4-DUdOYnni.svg",
-        "/assets/paymentmethods5-DHDmbJFk.svg",
-    ];
+        assets.PT1,
+        assets.PT2,
+        assets.PT3,
+        assets.Ether,
+        assets.Bitcoin,
+      ];
 
     return (
         <section className="relative bg-gradient-to-b pb-4 from-white via-white to-white text-primary">
@@ -17,7 +18,7 @@ const SubFeature = () => {
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 1.5 }}
-                    src="/assets/aboutBanner-D1jHUpAf.png"
+                    src={assets.banner}
                     className="w-full h-full object-cover opacity-40"
                     alt="Banner"
                 />
