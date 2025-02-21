@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { assets } from "../../lib/assets";
 
 function CoreFeature() {
 
@@ -52,9 +53,9 @@ function CoreFeature() {
                             transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                         >
                             <img
-                                src="/assets/coreFeatures-D86QESEV.webp"
+                                src={assets.transfer}
                                 alt="Phone"
-                                className="relative z-10 lg:w-[450px] lg:h-[550px] md:w-[300px] md:h-[300px] drop-shadow-lg"
+                                className="relative z-10 rounded-xl border-[10px] lg:w-[450px] lg:h-[550px] md:w-[300px] md:h-[300px] drop-shadow-lg border-gray-500"
                             />
                         </motion.div>
                     </div>

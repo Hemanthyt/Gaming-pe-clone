@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
+import { videos } from '../../lib/assets';
 
 function InsighfulData() {
     const videoRef = useRef(null);
@@ -94,7 +95,7 @@ function InsighfulData() {
                                 autoPlay
                                 loop
                             >
-                                <source src="/videos/chatbot-DZXWAkFX.mp4" type="video/mp4" />
+                                <source src={videos.chat} type="video/mp4" />
                             </video>
                         </div>
                     </div>

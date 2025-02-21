@@ -1,4 +1,4 @@
-import { assets } from "../../lib/assets";
+import {  videos } from "../../lib/assets";
 import Marquee from "../../components/Marquee/Marquee";
 
 const AboutUs = () => {
@@ -112,7 +112,7 @@ const AboutUs = () => {
             muted
             className="w-full rounded-2xl backdrop-blur-md bg-white/5 p-2 border border-white/10"
           >
-            <source src={assets.Globe} type="video/mp4" />
+            <source src={videos.globe} type="video/mp4" />
           </video>
         </div>
       </div>

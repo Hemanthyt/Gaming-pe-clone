@@ -4,6 +4,7 @@ import Marquee from '../../components/Marquee/Marquee';
 import PaymentGateway from '../../components/PaymentGateway/PaymentGateway';
 import InsighfulData from '../../components/InsighfulData/InsighfulData';
 import SubFeature from '../../components/SubFeature/SubFeature';
+import { videos } from '../../lib/assets';
 
 
 function Home() {
@@ -47,7 +48,7 @@ function Home() {
                     autoPlay
                     loop
                 >
-                    <source src="/videos/homeMap-DIlrE9fC.mp4" type="video/mp4" />
+                    <source src={videos.banner} type="video/mp4" />
                 </video>
 
                 {/* Hero Section */}

@@ -14,5 +14,14 @@ export const assets = {
   CryptoCoin: "/assets/cryptocoin.png",
   vision: "/assets/vision1.svg",
   map: "/assets/map.svg",
-  logo:"/assets/logo.jpg"
+  logo:"/assets/logo.jpg",
+  payment:'/assets/global-payments.jpg',
+  transfer:'/assets/transfer.jpg'
 };
+
+export const videos = {
+  globe: "/videos/globe.mp4",
+  chat:'/videos/chat.mp4',
+  banner:"/videos/banner.mp4"
+}
+ 

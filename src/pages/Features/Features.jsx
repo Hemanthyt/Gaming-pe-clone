@@ -1,6 +1,7 @@
 import InsighfulData from '../../components/InsighfulData/InsighfulData';
 import SubFeature from '../../components/SubFeature/SubFeature';
 import CoreFeature from '../../components/CoreFeature/CoreFeature';
+import { assets } from '../../lib/assets';
 
 const Features = () => {
     return (
@@ -20,7 +21,7 @@ const Features = () => {
                 {/* Hero Image */}
                 <div className='mt-16 animate-slide-bottom'>
                     <img
-                        src='/assets/featuresHero_image-DGygAdWy.webp'
+                        src={assets.payment}
                         className='w-full max-w-5xl h-[300px] md:h-[400px] lg:h-[500px] mx-auto rounded-2xl object-cover'
                         alt="Features Hero"
                         loading="lazy"
