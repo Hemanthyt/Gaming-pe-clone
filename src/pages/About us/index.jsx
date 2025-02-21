@@ -1,4 +1,4 @@
-import {  videos } from "../../lib/assets";
+import { assets, videos } from "../../lib/assets";
 import Marquee from "../../components/Marquee/Marquee";
 
 const AboutUs = () => {
@@ -55,7 +55,7 @@ const AboutUs = () => {
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="absolute inset-0 bg-gradient-to-r from-[#4f94c4]/10 to-[#82c1f5]/10 blur-3xl"></div>
           <img
-            src="https://CricPay.io/assets/servicesImg-YfgI6RZx.webp"
+            src={assets.aboutUs}
             alt="Person Holding Phone"
             className="relative z-10 w-80 sm:w-96 object-cover hover:scale-105 transition-transform duration-500"
           />

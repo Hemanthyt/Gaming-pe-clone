@@ -18,6 +18,7 @@ export const assets = {
   transfer: "/assets/transfer.jpg",
   crypto: "/assets/crypto.jpg",
   personPhone: "/assets/controller-image.webp",
+  aboutUs: "/assets/aboutus.webp",
 };
 
 export const videos = {
