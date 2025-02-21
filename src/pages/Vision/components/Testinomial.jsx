@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       title: "Visionary Leadership",
       description:
-        "The leadership team at GamingPe has a clear vision for the future of gaming. Their strategic decisions and commitment to innovation have significantly enhanced the gaming experience.",
+        "The leadership team at CricPay has a clear vision for the future of gaming. Their strategic decisions and commitment to innovation have significantly enhanced the gaming experience.",
     },
     {
       title: "Proven Industry Expertise",
@@ -22,12 +22,12 @@ const Testimonials = () => {
     {
       title: "Empowering the Gaming Community",
       description:
-        "GamingPe's leadership prioritizes the gaming community, fostering inclusivity, fair competition, and continuous enhancements to ensure players have the best experience.",
+        "CricPay's leadership prioritizes the gaming community, fostering inclusivity, fair competition, and continuous enhancements to ensure players have the best experience.",
     },
     {
       title: "Strategic Growth & Expansion",
       description:
-        "Under strong leadership, GamingPe has expanded its reach globally, bringing cutting-edge technology and optimized gaming services to users across different regions.",
+        "Under strong leadership, CricPay has expanded its reach globally, bringing cutting-edge technology and optimized gaming services to users across different regions.",
     },
   ];
 

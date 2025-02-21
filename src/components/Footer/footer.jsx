@@ -8,12 +8,12 @@ const Footer = () => {
 
                     <img
                         src={assets.logo}
-                        alt="GamingPE Logo"
+                        alt="CricPay Logo"
                         className="object-cover h-full w-full"
                     />
                 </div>
                 <p className="text-black/80 text-sm">
-                    Copyright © 2025 GamingPE. All Rights Reserved.
+                    Copyright © 2021 CricPay. All Rights Reserved.
                 </p>
             </div>
         </footer >

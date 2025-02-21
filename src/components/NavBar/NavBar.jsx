@@ -34,7 +34,7 @@ const NavBar = () => {
                         <Link to="/" className="block">
                             <img
                                 src="/assets/logo.jpg"
-                                alt="GamingPE Logo"
+                                alt="CricPay Logo"
                                 className="h-8 w-auto sm:h-15 md:h-20 lg:h-24 object-contain transition-all duration-200"
                             />
                         </Link>

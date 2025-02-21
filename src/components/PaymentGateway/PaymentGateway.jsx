@@ -69,15 +69,15 @@ const PaymentGateway = () => {
                             SIMPLE PAYMENT <br /> GATEWAY PROCESS
                         </h2>
                         <p className="text-gray-600 mt-4 text-sm sm:text-base leading-relaxed">
-                            GamingPe offers a seamless payment gateway with straightforward steps. Users can easily select their preferred payment method, enter details securely, and confirm their purchase. The process is quick, with minimal clicks, ensuring an effortless transaction experience while maintaining top-notch security throughout.
+                            CricPay offers a seamless payment gateway with straightforward steps. Users can easily select their preferred payment method, enter details securely, and confirm their purchase. The process is quick, with minimal clicks, ensuring an effortless transaction experience while maintaining top-notch security throughout.
                         </p>
                     </motion.div>
 
                     <div className="space-y-6 sm:space-y-8">
                         {[
-                            { title: "Create Account", desc: "Effortlessly set up your GamingPe account with a simple sign-up process, ready to embark on your gaming journey in minutes.", icon: Lock },
+                            { title: "Create Account", desc: "Effortlessly set up your CricPay account with a simple sign-up process, ready to embark on your gaming journey in minutes.", icon: Lock },
                             { title: "User Configuration", desc: "Customize your profile and preferences to enhance your gaming experience, ensuring everything is tailored to your needs.", icon: Smartphone },
-                            { title: "Enjoy Full Access", desc: "Unlock all features and benefits of GamingPe, diving into a seamless and immersive gaming world without interruptions.", icon: UserCheck }
+                            { title: "Enjoy Full Access", desc: "Unlock all features and benefits of CricPay, diving into a seamless and immersive gaming world without interruptions.", icon: UserCheck }
                         ].map((item, index) => (
                             <motion.div
                                 key={index}

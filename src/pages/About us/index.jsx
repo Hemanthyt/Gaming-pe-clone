@@ -55,7 +55,7 @@ const AboutUs = () => {
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="absolute inset-0 bg-gradient-to-r from-[#4f94c4]/10 to-[#82c1f5]/10 blur-3xl"></div>
           <img
-            src="https://gamingpe.io/assets/servicesImg-YfgI6RZx.webp"
+            src="https://CricPay.io/assets/servicesImg-YfgI6RZx.webp"
             alt="Person Holding Phone"
             className="relative z-10 w-80 sm:w-96 object-cover hover:scale-105 transition-transform duration-500"
           />
@@ -97,7 +97,7 @@ const AboutUs = () => {
             className="text-gray-600 text-lg leading-relaxed p-6 bg-white backdrop-blur-sm border border-gray-200 rounded-lg transition-all duration-300 
                             hover:border-red-500/70 shadow-lg hover:shadow-red-500/10"
           >
-            GamingPe connects gamers worldwide with seamless services and
+            CricPay connects gamers worldwide with seamless services and
             localized support, creating a unified gaming community across
             continents.
           </p>

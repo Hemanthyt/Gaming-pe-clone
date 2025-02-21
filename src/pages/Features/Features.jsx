@@ -12,7 +12,7 @@ const Features = () => {
                         FEATURES
                     </h1>
                     <p className="text-primary text-base md:text-lg max-w-2xl mx-auto mt-6">
-                        Gamingpe streamlines global payments with a single API, offering secure,
+                        CricPay streamlines global payments with a single API, offering secure,
                         scalable solutions to enhance transactions and drive business growth.
                     </p>
                 </div>

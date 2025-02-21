@@ -24,12 +24,12 @@ const CryptoCurrency = () => {
               Integrating Cryptocurrency Payments
             </h1>
             <p className="text-gray-600 text-md md:text-lg font-semibold mt-4 leading-relaxed text-center lg:text-left">
-              Enable secure, global crypto payments with Gamingpe.
+              Enable secure, global crypto payments with CricPay.
             </p>
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-gray-600 text-md md:text-lg font-semibold leading-relaxed">
-              Cryptocurrency payment integration with Gamingpe is becoming
+              Cryptocurrency payment integration with CricPay is becoming
               increasingly popular as businesses seek to offer diverse payment
               options and cater to tech-savvy customers. By integrating
               cryptocurrency payments, companies can facilitate transactions

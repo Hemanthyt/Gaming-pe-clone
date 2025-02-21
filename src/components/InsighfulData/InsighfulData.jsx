@@ -24,7 +24,7 @@ function InsighfulData() {
 
                         <p className="text-primary text-base sm:text-lg leading-relaxed">
                             Leverage real-time insights to understand payment trends, optimize
-                            strategies, and drive growth in emerging markets with GamingPes
+                            strategies, and drive growth in emerging markets with CricPays
                             data-driven platform.
                         </p>
 

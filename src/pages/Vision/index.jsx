@@ -28,14 +28,14 @@ const Vision = () => {
             <p className="text-gray-600 text-md md:text-lg font-semibold leading-relaxed">
               The founders realized that in order to be successful in existing
               as well as emerging e-commerce markets an excellent client journey
-              was paramount. Gamingpe was designed from the ground up to offer
-              market changing innovative features and technology. Gamingpe
+              was paramount. CricPay was designed from the ground up to offer
+              market changing innovative features and technology. CricPay
               created a team of innovators, technologists and payments
               enthusiasts who were focused on their mission to bridge the gaps
               between technology, intelligence and payments.
             </p>
             <p className="text-gray-600 text-md md:text-lg font-semibold leading-relaxed">
-              Gamingpe&apos;s mission is ensuring our merchants along with their
+              CricPay&apos;s mission is ensuring our merchants along with their
               customers receive the best seamless customer experience that
               maximizes sales, profits & client retention. Our vision is to
               become a global payment connector Brand known for its diversity of
@@ -75,9 +75,9 @@ const Vision = () => {
 
           <div className="space-y-4 text-md md:text-lg text-center md:text-left font-semibold text-gray-600">
             <p>
-              GamingPE was founded in 2015 by industry veterans with deep
+              CricPay was founded in 2015 by industry veterans with deep
               expertise in payments technology and cybersecurity. Born from a
-              vision to revolutionize global payments, GamingPE is not just
+              vision to revolutionize global payments, CricPay is not just
               about transactions—it&apos;s about transforming experiences.
             </p>
             <p>
@@ -88,7 +88,7 @@ const Vision = () => {
               transactions across the globe.
             </p>
             <p>
-              At GamingPE, we are committed to pushing the boundaries of
+              At CricPay, we are committed to pushing the boundaries of
               what&apos;s possible. Our solutions are designed to adapt and
               evolve, meeting the dynamic needs of the gaming industry and
               beyond. We empower businesses to thrive in an ever-changing
@@ -106,7 +106,7 @@ const Vision = () => {
           Experienced Leadership
         </h2>
         <p className="text-gray-600 text-md md:text-lg max-w-4xl mx-auto">
-          Connect with Gamingpe for payment solutions, career opportunities, or
+          Connect with CricPay for payment solutions, career opportunities, or
           inquiries, leveraging AI-driven innovation in fintech.
         </p>
       </div>

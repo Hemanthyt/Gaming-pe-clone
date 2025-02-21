@@ -73,21 +73,21 @@ export const TCCardData = [
   {
     title: "Localized Payment Connector",
     description:
-      "The traditional payment method world is a bricks and mortar building with a product to sell, limiting the number of customers that this merchant can target in their stores. Our localized online payment connector not only allows a traditional merchant to grow their business nationally but also allows them to target other growth regions outside their country with Gamingpe's software technology.",
+      "The traditional payment method world is a bricks and mortar building with a product to sell, limiting the number of customers that this merchant can target in their stores. Our localized online payment connector not only allows a traditional merchant to grow their business nationally but also allows them to target other growth regions outside their country with CricPay's software technology.",
     icon: Icon1,
     rating: 5,
   },
   {
     title: "Omni Channel Connector",
     description:
-      "Gamingpe is an Omni Channel connector with the functionality to connect merchants and processors to various local payment types without causing friction with the user experience and customer flow. This allows our merchants to grow a global business without having to worry about integrating to each local payment method per country.",
+      "CricPay is an Omni Channel connector with the functionality to connect merchants and processors to various local payment types without causing friction with the user experience and customer flow. This allows our merchants to grow a global business without having to worry about integrating to each local payment method per country.",
     icon: Icon2,
     rating: 5,
   },
   {
     title: "AI Machine Learning Technology",
     description:
-      "Gamingpe's AI machine learning technology means the system will always keep improving as it understands customer behaviors in different regions. This means our local technology per region is unparalleled in terms of customer approval as the software efficacy keeps improving itself with time.",
+      "CricPay's AI machine learning technology means the system will always keep improving as it understands customer behaviors in different regions. This means our local technology per region is unparalleled in terms of customer approval as the software efficacy keeps improving itself with time.",
     icon: Icon3,
     rating: 5,
   },

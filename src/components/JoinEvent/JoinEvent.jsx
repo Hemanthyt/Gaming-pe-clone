@@ -29,7 +29,7 @@ function JoinEvent() {
             <div className="mb-8">
                 <img
                     src={assets.logo}
-                    alt="GamingPE Logo"
+                    alt="CricPay Logo"
                     className="h-40 w-auto"
                 />
             </div>
