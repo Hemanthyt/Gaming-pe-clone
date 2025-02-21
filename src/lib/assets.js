@@ -20,7 +20,8 @@ export const assets = {
   aboutUs: "/assets/aboutus.webp",
   api: "/assets/api.webp",
   vision: "/assets/vision.jpeg",
-  banner:"/assets/banner.jpg"
+  banner:"/assets/banner.jpg",
+  hero:"/assets/hero-right.jpeg"
 };
 
 export const videos = {
