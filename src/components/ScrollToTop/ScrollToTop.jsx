@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
@@ -9,6 +10,12 @@ const ScrollToTop = () => {
     } else {
       setIsVisible(false);
     }
+
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const scrolled = (scrollTop / (scrollHeight - windowHeight)) * 100;
+    setScrollProgress(scrolled);
   };
 
   const scrollToTop = () => {
@@ -30,7 +37,10 @@ const ScrollToTop = () => {
       {isVisible && 
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 bg-[#920323] hover:bg-red-700 text-white p-3 rounded-full shadow-lg transition-all duration-300"
+          style={{
+            background: `linear-gradient(to top, #ff6b6b ${scrollProgress}%, #920323 ${scrollProgress}%)`
+          }}
+          className="fixed bottom-5 right-5 hover:bg-red-700 text-white p-3 rounded-full shadow-lg transition-all duration-300"
           aria-label="Scroll to top"
         >
           <svg 
