@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { assets } from '../../lib/assets';
 
 function JoinEvent() {
     const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ function JoinEvent() {
             {/* Logo Section */}
             <div className="mb-8">
                 <img
-                    src="/assets/logo2-BByECSNC.svg"
+                    src={assets.logo}
                     alt="GamingPE Logo"
                     className="h-40 w-auto"
                 />

@@ -78,7 +78,7 @@ const AboutUs = () => {
               className="p-6 bg-white backdrop-blur-sm border border-gray-200 rounded-lg transition-all duration-300 
                             hover:border-red-500/70 shadow-lg hover:shadow-red-500/10 transform hover:-translate-y-1 text-center"
             >
-              <h3 className="text-3xl font-bold bg-gradient-to-r text-[#920323] bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-[#920323] to-[#be0a31] bg-clip-text text-transparent">
                 {stat.value}
               </h3>
               <p className="text-gray-600 mt-2">{stat.label}</p>

@@ -14,4 +14,5 @@ export const assets = {
   CryptoCoin: "/assets/cryptocoin.png",
   vision: "/assets/vision1.svg",
   map: "/assets/map.svg",
+  logo:"/assets/logo.jpg"
 };

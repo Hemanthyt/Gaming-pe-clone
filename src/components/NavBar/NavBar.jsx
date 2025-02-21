@@ -89,13 +89,13 @@ const NavBar = () => {
                     <div className="flex items-center space-x-4 lg:hidden">
                         <button
                             onClick={() => navigate("/newsletter")}
-                            className="border-2 border-[#00A6FB] bg-[#051622] text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-[#00A6FB] transition-all duration-200"
+                            className="border-2 border-[#920323]/40 bg-[#e9345b] text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-opacity-70 transition-all duration-200"
                         >
                             Get in touch
                         </button>
                         <button
                             onClick={toggleMenu}
-                            className="text-gray-300 hover:text-white p-2 transition-colors duration-200"
+                            className="text-gray-300 hover:text-gray-600 p-2 transition-colors duration-200"
                             aria-label="Toggle menu"
                         >
                             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -105,16 +105,16 @@ const NavBar = () => {
             </div>
 
             {/* Mobile Navigation */}
-            <div className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={toggleMenu}>
+            <div className={`fixed inset-0 bg-white bg-opacity-50 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={toggleMenu}>
                 <div
-                    className={`fixed right-0 top-0 h-full w-64 bg-[#051622] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+                    className={`fixed right-0 top-0 h-full w-64 bg-[#ffff] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                     onClick={e => e.stopPropagation()}
                 >
                     <div className="flex flex-col h-full">
                         <div className="flex justify-end p-4">
                             <button
                                 onClick={toggleMenu}
-                                className="text-gray-300 hover:text-white p-2"
+                                className="text-gray-700 hover:text-gray-500 p-2"
                             >
                                 <X className="h-6 w-6" />
                             </button>
@@ -125,7 +125,7 @@ const NavBar = () => {
                                 <Link
                                     key={item.label}
                                     to={item.path}
-                                    className="text-gray-300 hover:text-white px-4 py-2 text-base font-medium transition-colors duration-200"
+                                    className="text-gray-700 hover:text-gray-500 px-4 py-2 text-base font-medium transition-colors duration-200"
                                     onClick={toggleMenu}
                                 >
                                     {item.label}
