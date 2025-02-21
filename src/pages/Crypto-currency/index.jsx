@@ -2,14 +2,14 @@ import { assets } from "../../lib/assets";
 
 const CryptoCurrency = () => {
   return (
-    <div className="bg-[#031521] w-full">
+    <div className="bg-white w-full">
       {/* Heading */}
       <div className="flex flex-col items-center py-10 px-4 animate-fade-in">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl text-center uppercase font-bold bg-gradient-to-r from-blue-400 via-cyan-200 to-sky-100 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl text-center uppercase font-bold text-[#920323] ">
           Cryptocurrency <br /> Payment Solutions
         </h1>
 
-        <p className="text-base md:text-lg text-gray-300 max-w-lg md:max-w-2xl my-6 md:my-10 font-semibold text-center">
+        <p className="text-base md:text-lg text-gray-600 max-w-lg md:max-w-2xl my-6 md:my-10 font-semibold text-center">
           Empowering partners with seamless Debit, e-wallets, and crypto
           transactions for gaming worldwide.
         </p>
@@ -20,15 +20,15 @@ const CryptoCurrency = () => {
         {/* Left Section - Text */}
         <div className="w-full lg:w-1/2 flex flex-col space-y-4 animate-slide-in-left">
           <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase bg-gradient-to-r from-blue-400 to-cyan-100 text-transparent bg-clip-text leading-tight text-center lg:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase bg-gradient-to-r text-[#920323] leading-tight text-center lg:text-left">
               Integrating Cryptocurrency Payments
             </h1>
-            <p className="text-gray-200 text-md md:text-lg font-semibold mt-4 leading-relaxed text-center lg:text-left">
+            <p className="text-gray-600 text-md md:text-lg font-semibold mt-4 leading-relaxed text-center lg:text-left">
               Enable secure, global crypto payments with Gamingpe.
             </p>
           </div>
           <div className="flex flex-col gap-4">
-            <p className="text-gray-200 text-md md:text-lg font-semibold leading-relaxed">
+            <p className="text-gray-600 text-md md:text-lg font-semibold leading-relaxed">
               Cryptocurrency payment integration with Gamingpe is becoming
               increasingly popular as businesses seek to offer diverse payment
               options and cater to tech-savvy customers. By integrating
@@ -36,7 +36,7 @@ const CryptoCurrency = () => {
               using digital currencies like Bitcoin, Ethereum, USDT, and others,
               without the need for traditional intermediaries such as banks.
             </p>
-            <p className="text-gray-200 text-md md:text-lg font-semibold leading-relaxed">
+            <p className="text-gray-600 text-md md:text-lg font-semibold leading-relaxed">
               This integration offers several benefits, including faster
               transaction processing, lower fees, and enhanced security through
               blockchain technology. Additionally, it opens up global markets,
@@ -44,7 +44,7 @@ const CryptoCurrency = () => {
               without worrying about currency conversion or international
               transaction fees.
             </p>
-            <p className="text-gray-200 text-md md:text-lg font-semibold leading-relaxed">
+            <p className="text-gray-600 text-md md:text-lg font-semibold leading-relaxed">
               To implement cryptocurrency payments, businesses typically use
               specialized payment gateways that support digital currencies.
               These gateways provide the necessary infrastructure to authorize
