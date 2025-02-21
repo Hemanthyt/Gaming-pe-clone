@@ -9,6 +9,8 @@ import ApiIntegration from "./pages/Api-Integration";
 import CryptoCurrency from "./pages/Crypto-currency";
 import Vision from "./pages/Vision";
 import Footer from './components/Footer/footer'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
 const App = () => {
   const location = useLocation();
   return (
@@ -31,6 +33,7 @@ const App = () => {
       <div>
         <JoinEvent />
         <Footer />
+        <ScrollToTop />
       </div>
     </>
   );
