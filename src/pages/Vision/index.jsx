@@ -50,7 +50,7 @@ const Vision = () => {
             <img
               src={assets.vision}
               alt="Person Holding Phone"
-              className="relative z-10 w-full max-w-xs md:max-w-md lg:max-w-lg object-cover"
+              className="relative z-10 w-full max-w-xs md:max-w-md lg:max-w-lg object-cover rounded"
             />
           </div>
         </div>
@@ -77,8 +77,8 @@ const Vision = () => {
             <p>
               CricPay was founded in 2015 by industry veterans with deep
               expertise in payments technology and cybersecurity. Born from a
-              vision to revolutionize global payments, CricPay is not just
-              about transactions—it&apos;s about transforming experiences.
+              vision to revolutionize global payments, CricPay is not just about
+              transactions—it&apos;s about transforming experiences.
             </p>
             <p>
               We are pioneering the future of payments with our cutting-edge

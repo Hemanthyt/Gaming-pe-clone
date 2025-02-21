@@ -11,7 +11,6 @@ export const assets = {
   Bitcoin: "/assets/Bitcoin.svg",
   Globe: "/assets/globe.mp4",
   HandMobile: "/assets/api-image.svg",
-  vision: "/assets/vision1.svg",
   map: "/assets/map.svg",
   logo: "/assets/logo.jpg",
   payment: "/assets/global-payments.jpg",
@@ -19,6 +18,7 @@ export const assets = {
   crypto: "/assets/crypto.jpg",
   personPhone: "/assets/controller-image.webp",
   aboutUs: "/assets/aboutus.webp",
+  vision: "/assets/vision.jpeg",
 };
 
 export const videos = {
