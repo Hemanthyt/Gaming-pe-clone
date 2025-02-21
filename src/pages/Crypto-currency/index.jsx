@@ -62,9 +62,9 @@ const CryptoCurrency = () => {
         <div className="relative w-full lg:w-1/2 flex justify-center items-center">
           <div className="animate-float">
             <img
-              src={assets.CryptoCoin}
+              src={assets.crypto}
               alt="Person Holding Phone"
-              className="w-64 md:w-80 lg:w-full max-w-md relative z-10 object-cover"
+              className="w-72 md:w-96 lg:w-full max-w-xl relative z-10 object-cover rounded"
             />
           </div>
 

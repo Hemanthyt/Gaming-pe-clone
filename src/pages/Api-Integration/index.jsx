@@ -25,9 +25,9 @@ const ApiIntegration = () => {
           {/* Main Image */}
           <div className="relative z-20 animate-float">
             <img
-              src={assets.HandMobile}
+              src={assets.api}
               alt="Person Holding Phone"
-              className="md:h-[550px] h-[350px] object-cover drop-shadow-2xl"
+              className="md:w-[600px] w-[350px] object-cover drop-shadow-2xl rounded"
             />
           </div>
 

@@ -43,7 +43,7 @@ const TechnicalController = () => {
 
           {/* Image */}
           <img
-            src="https://CricPay.io/assets/connector_img-BqgLmEVE.webp"
+            src={assets.personPhone}
             alt="Person Holding Phone"
             className="relative z-10 w-[100%] left-10 h-[400px] lg:h-auto lg:top-0 top-20 sm:left-32 md:left-44   object-cover"
           />
