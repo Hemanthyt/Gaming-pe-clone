@@ -8,10 +8,10 @@ const Features = () => {
             {/* Hero Section */}
             <section className="container mx-auto px-4 py-16">
                 <div className="text-center animate-fade-in">
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold font-poppins bg-gradient-to-r from-sky-300 via-white to-sky-300 bg-clip-text text-transparent">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold font-poppins bg-[#920323] bg-clip-text text-transparent">
                         FEATURES
                     </h1>
-                    <p className="text-white text-base md:text-lg max-w-2xl mx-auto mt-6">
+                    <p className="text-primary text-base md:text-lg max-w-2xl mx-auto mt-6">
                         Gamingpe streamlines global payments with a single API, offering secure,
                         scalable solutions to enhance transactions and drive business growth.
                     </p>

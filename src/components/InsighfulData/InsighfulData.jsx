@@ -11,18 +11,18 @@ function InsighfulData() {
         }
     }, []);
     return (
-        <div className=" bg-[#051622] mt-10 px-4 sm:px-6 lg:px-30 text-white p-4 sm:p-8">
+        <div className=" bg-white mt-10 px-4 sm:px-6 lg:px-30 text-primary p-4 sm:p-8">
             <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-8 lg:gap-25 items-center">
                     {/* Left Column */}
                     <div className="space-y-4 sm:space-y-6 pb-8 md:pb-0">
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-                            <span className="text-[#00A6FB]">INSIGHTFUL</span> DATA
+                            <span className="text-[#920323]">INSIGHTFUL</span> DATA
                             <br />
-                            <span className="text-[#00A6FB]">RICH</span> ANALYTICS
+                            <span className="text-[#920323]">RICH</span> ANALYTICS
                         </h1>
 
-                        <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                        <p className="text-primary text-base sm:text-lg leading-relaxed">
                             Leverage real-time insights to understand payment trends, optimize
                             strategies, and drive growth in emerging markets with GamingPes
                             data-driven platform.
@@ -41,14 +41,7 @@ function InsighfulData() {
                                 description="Utilize comprehensive insights to plan effective marketing strategies, manage budgets efficiently, and expand seamlessly into new regions."
                             />
                         </div>
-                        <button
-                            className="w-full sm:w-auto px-8 sm:px-12 py-4 
-                        bg-gradient-to-r from-[#00A6FB] to-[#0077B6] 
-                        text-white text-[14px] sm:text-[16px] font-semibold 
-                        rounded-full shadow-lg hover:shadow-xl
-                        transform hover:scale-105 transition-all duration-300 
-                        border border-[#00A6FB]/30 hover:border-[#00A6FB]"
-                        >
+                        <button className="border-2 border-[#FF0000] bg-transparent text-[#920323] px-10 py-3 rounded-full text-lg hover:bg-[#920323] hover:text-white transition-all duration-300">
                             Learn More
                         </button>
                     </div>
@@ -83,8 +76,8 @@ function InsighfulData() {
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                                <div className="absolute top-[35%] left-[2%] w-4 h-4 bg-white rounded-full opacity-80"></div>
-                                <div className="absolute bottom-[35%] right-[10%] w-5 h-5 bg-white rounded-full opacity-80"></div>
+                                <div className="absolute top-[35%] left-[2%] w-4 h-4 bg-black rounded-full opacity-80"></div>
+                                <div className="absolute bottom-[35%] right-[10%] w-5 h-5 bg-black rounded-full opacity-80"></div>
 
                             </motion.div>
 
@@ -113,10 +106,10 @@ function InsighfulData() {
 
 function FeatureCard({ title, description }) {
     return (
-        <div className="bg-[#081e2e] p-4 sm:p-6 rounded-xl border border-[#00A6FB] transition-colors duration-300 h-full">
+        <div className="bg-white p-4 sm:p-6 rounded-xl border border-red-500 transition-colors duration-300 h-full">
             <div>
                 <h3 className="text-base sm:text-lg font-bold mb-2">{title}</h3>
-                <p className="text-white text-sm sm:text-base">{description}</p>
+                <p className="text-primary text-sm sm:text-base">{description}</p>
             </div>
         </div>
     );

@@ -11,19 +11,19 @@ const Marquee = () => {
 
   return (
     <div>
-      <div className="w-full overflow-hidden relative bg-gray-700">
-        <div className="w-full h-[1px] bg-blue-400/50 mb-2"></div>
-        <div className="flex gap-x-32 animate-marquee">
+      <div className="w-full overflow-hidden relative bg-gray-200">
+        <div className="w-full h-[1px] bg-gray-200/20 mb-2"></div>
+        <div className="flex gap-x-10 animate-marquee ">
           {[...logos, ...logos].map((src, index) => (
             <img
               key={index}
               src={src}
               alt={`Logo ${index + 1}`}
-              className="size-32 "
+              className="size-32 bg-gray-700/50 rounded-2xl px-5"
             />
           ))}
         </div>
-        <div className="w-full h-[1px] bg-blue-400/50 mt-2"></div>
+        <div className="w-full h-[1px] bg-gray-200/20 mt-2"></div>
       </div>
     </div>
   );
